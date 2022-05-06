@@ -21,5 +21,6 @@ All the resources are taken from the public internet and if you find any copyrig
 
 You can also check this website[ ML-University](https://pawantrivedi.me/ML-University/), a hub for technical courses and other useful resources.&#x20;
 
-If you love these resources, give a ⭐on [ML-university](https://github.com/d0r1h/ML-University) GitHub repo. :love\_letter:
+If you love these resources, give a ⭐on [ML-university](https://github.com/d0r1h/ML-University) & [ML-Notes](https://github.com/d0r1h/ML-Notes) GitHub repo. :love\_letter:
 
+Checkout [table of content](https://github.com/d0r1h/ML-Notes/blob/main/SUMMARY.md#table-of-contents) for an understanding whatsall in here
