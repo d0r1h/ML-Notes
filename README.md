@@ -14,7 +14,7 @@ So to keep yourself and myself too motivated and focused on the goal I have crea
 All the resources are taken from the public internet and if you find any copyrighted material and you are the authorized owner of that you can [**Contact me**](mailto:59r@protonmail.com) and the material will be taken down immediately.
 
 {% hint style="info" %}
-**This is continuously updated** and if you are a Machine learning practitioner and have some good suggestions to improve this or have some good resources to share, you create a pull request or issue and [contribute](https://github.com/d0r1h/ML-University).
+**This is continuously updated** and if you are a Machine learning practitioner and have some good suggestions to improve this or have some good resources to share, you create a pull request or issue and [contribute](https://github.com/d0r1h/ML-Notes).
 {% endhint %}
 
 [Pawan Trivedi](https://pawantrivedi.me) a graduate Machine Learning student at PES University, INDIA maintained this page.&#x20;
