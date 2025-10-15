@@ -309,7 +309,7 @@ poisson = scipy.stats.poisson.pmf(n, rate)
  poisson = scipy.stats.poisson.cdf(n,rate)
 ```
 
-#### ****
+####
 
 #### **Normal Distribution**
 
@@ -345,7 +345,7 @@ In Simple Random Sampling Without Replacement (\`**SRSWOR**\`) an observation ca
 
 * Stratified Sample
 
-We can use the stratified sampling method to draw a sample from the heterogeneous dataset. The dataset is divided into the **homogeneous strata(**equal group**)** and _then a sample is drawn from each stratum_. The final sample contains elements from each stratum. ![](../.gitbook/assets/5.png)
+We can use the stratified sampling method to draw a sample from the heterogeneous dataset. The dataset is divided into the **homogeneous strata(**&#x65;qual grou&#x70;**)** and _then a sample is drawn from each stratum_. The final sample contains elements from each stratum. ![](../.gitbook/assets/5.png)
 
 * Systematic Sample
 

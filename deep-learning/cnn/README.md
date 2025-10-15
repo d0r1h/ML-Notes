@@ -75,9 +75,9 @@ In `Conv2D` layers, padding is configurable via the `padding` argument, which ta
 
 **STRIDES**
 
-The other factor that can influence output size is the notion of strides. The description of convolution so far has assumed that the center tiles of the convolution windows are all contiguous. But the distance between two successive windows is a parameter of the convolution, called its stride, which defaults to 1. It’s possible to have stride convolutions: convolutions with a stride higher than 1. In below figure**,** you can see the patches extracted by a 3 × 3 convolution with stride 2 over a 5 × 5 input (without padding).
+The other factor that can influence output size is the notion of strides. The description of convolution so far has assumed that the center tiles of the convolution windows are all contiguous. But the distance between two successive windows is a parameter of the convolution, called its stride, which defaults to 1. It’s possible to have stride convolutions: convolutions with a stride higher than 1. In below figur&#x65;**,** you can see the patches extracted by a 3 × 3 convolution with stride 2 over a 5 × 5 input (without padding).
 
-![](<../../.gitbook/assets/image (70).png>)
+![](<../../.gitbook/assets/image (69).png>)
 
 Using stride 2 means the width and height of the feature map are downsampled by a factor of 2. Strided convolutions are rarely used in practice. To downsample feature maps, instead of strides, we tend to use the **max pooling operation.**&#x20;
 
@@ -87,7 +87,7 @@ It consists of extracting windows from the input feature maps and outputting the
 
 A big difference from convolution is that max pooling is usually done with 2 × 2 windows and stride 2, in order to downsample the feature maps by a factor of 2. On the other hand, convolution is typically done with 3 × 3 windows and no stride.
 
-****
+
 
 **Following notebook is implementation of CNN using MNIST dataset.**&#x20;
 

@@ -22,7 +22,7 @@ To construct a model with high prediction efficacy it is important to consider t
 
 ### **Variance:**
 
-****
+
 
 If the model is too simple it will have a `high bias and low variance`**,** Such a model will give not perfectly accurate predictions, but the predictions will be consistent. The model will not be flexible enough to learn from the majority of given data, this is termed as **underfitting.**
 
@@ -44,7 +44,7 @@ Each observation is used exactly k times for training and exactly once for testi
 
 ### **Leave one out Cross Validation (LOOCV):**&#x20;
 
-It is a special case of k - fold cross-validation method. Instead of subsetting**,** the data, at every run one observation is considered as the test set. For n observations, there are n runs and the total error is the sum of errors for n runs.&#x20;
+It is a special case of k - fold cross-validation method. Instead of subsettin&#x67;**,** the data, at every run one observation is considered as the test set. For n observations, there are n runs and the total error is the sum of errors for n runs.&#x20;
 
 ## Gradient Descent
 

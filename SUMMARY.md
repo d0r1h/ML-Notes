@@ -24,6 +24,8 @@
   * [CNN](deep-learning/cnn/README.md)
     * [Object Detection](deep-learning/cnn/object-detection.md)
   * [RNN](deep-learning/rnn.md)
+* [LLM](llm/README.md)
+  * [CS336 : Language Model from Scratch](llm/cs336-language-model-from-scratch.md)
 * [Natural language processing](natural-language-processing.md)
 * [Data Science](data-science.md)
 * [Sql](sql.md)

@@ -110,7 +110,7 @@ Once we found the first two closest points(x,y) and form a cluster using them, w
 
 Similarity between the clusters(inter-cluster distance)  can be measured using various types of linkage methods-
 
-* Single **** linkage
+* Single linkage
 * Complete linkage
 * Average linkage
 * Centroid linkage
@@ -137,7 +137,7 @@ X-axis of the dendrogram represents the data point, each considered as a single 
 
 **Cophenetic correlation coefficient**
 
-****
+
 
 **Cophenetic correlation coefficient:** Quantifies how the dendrogram has represented the dissimilarities between the observations. It is defined as the correlation coefficient between cophenetic distances and the actual distance between the observations. The value close to 1 represents the best linkage quality.
 

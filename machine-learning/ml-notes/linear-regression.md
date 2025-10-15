@@ -33,7 +33,7 @@ Error term/ Residual represents the distance of the observed value from the valu
 
 It has multiple&#x20;
 
-### Measures of Variation <a href="#4.2-measures-of-variation" id="4.2-measures-of-variation"></a>
+### Measures of Variation <a href="#id-4.2-measures-of-variation" id="id-4.2-measures-of-variation"></a>
 
 **SSE:** It is defined as the sum of the squared difference between the actual value and the predicted value.
 
@@ -121,15 +121,15 @@ Normality tests are used to determine if a data set is well-modeled by a normal 
 
 #### **R square**
 
-The R2 value gives the percentage of variation in the response variable explained by the predictor variables**.** If the values of R2 = 0.87, it implies that 87% of variation in the response variable is explained by the predictor variables.&#x20;
+The R2 value gives the percentage of variation in the response variable explained by the predictor variable&#x73;**.** If the values of R2 = 0.87, it implies that 87% of variation in the response variable is explained by the predictor variables.&#x20;
 
 #### **Adjusted R square**
 
-Adjusted R2 gives the percentage of variation explained by independent variables that actually affect the dependent variable**.**&#x20;
+Adjusted R2 gives the percentage of variation explained by independent variables that actually affect the dependent variabl&#x65;**.**&#x20;
 
 #### **F test for significance**
 
-To check the significance of the regression model we use the F test**,** which is similar to ANOVA for regression. And if p\_value is less than alpha(level of significance) then implies that the model is significant.
+To check the significance of the regression model we use the F tes&#x74;**,** which is similar to ANOVA for regression. And if p\_value is less than alpha(level of significance) then implies that the model is significant.
 
 ### Interaction effect
 

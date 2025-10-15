@@ -6,7 +6,7 @@
 
 **Feed Forward Neural Network:**
 
-![](<../.gitbook/assets/image (60).png>)
+![](<../.gitbook/assets/image (59).png>)
 
 This is a two layer neural network, One is hidden layer(having 3 neurons) and one is output layer(having 2 neurons). Feedforward refers to a unidirectional flow of information (and no lateral/intra-layer connections) from input to output.&#x20;
 
@@ -64,7 +64,7 @@ Initializing weights randomly, while working with a (deep) network can potential
 
 **Vanishing / Exploding Gradients**&#x20;
 
-![](../.gitbook/assets/1-\_YRWJr-jF7tKnmUq-e3ltw.png)
+![](../.gitbook/assets/1-_YRWJr-jF7tKnmUq-e3ltw.png)
 
 As the backpropagation algorithm advances downwards(or backward) from the output layer towards the input layer, the gradients often get smaller and smaller and approach zero which eventually leaves the weights of the initial or lower layers nearly unchanged. As a result, the gradient descent never converges to the optimum. This is known as the **vanishing gradients** problem.
 
@@ -76,7 +76,7 @@ Following are some signs that can indicate that our gradients are exploding/vani
 | :-----------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------: |
 | There is an exponential growth in the model parameters. | The parameters of the higher layers change significantly whereas the parameters of lower layers would not change much (or not at all). |
 |    The model weights may become NaN during training.    |                                             The model weights may become 0 during training.                                            |
-|        The model experiences avalanche learning.        |        The model learns very slowly and perhaps the training stagnates at a very early stage just after a few iterations. ****         |
+|        The model experiences avalanche learning.        |           The model learns very slowly and perhaps the training stagnates at a very early stage just after a few iterations.           |
 
 By using following techniques we can fix these problems:-
 
@@ -93,7 +93,7 @@ To learn about Batch Normalization and other regularization technique, follow Re
 
 Learning rate is a hyperparameter which determines to what extent newly acquired weights overrides old weights. In general it lies between 0 and 1. Momentum is used to decide the weight on nodes from the previous iterations and it helps to improve training speed and also in avoiding local minima.&#x20;
 
-****
+
 
 
 
@@ -105,11 +105,11 @@ Learning rate is a hyperparameter which determines to what extent newly acquired
 
 #### List of few free courses on Deep Learning by Top University
 
-| Title                                           | Link                                                                             |
-| ----------------------------------------------- | -------------------------------------------------------------------------------- |
-| Introduction to Deep Learning(6.S191) **MIT**   | [YouTube](https://tinyurl.com/y2jmc89y)                                          |
-| Deep Learning **NYU**                           | [WebSite](https://atcold.github.io/pytorch-Deep-Learning/)                       |
-| Deep Learning Lecture Series **DeepMind x UCL** | [YouTube](https://tinyurl.com/create.php)                                        |
-| Deep Learning (CS230) **Stanford**              | [WebSite](https://cs230.stanford.edu/lecture/)                                   |
-| CNN for Visual Recognition(CS231n) **Stanford** | [WebSite ](https://cs231n.github.io) \| [YouTube](https://tinyurl.com/y2gghbvs)  |
-|                                                 |                                                                                  |
+| Title                                           | Link                                                                              |
+| ----------------------------------------------- | --------------------------------------------------------------------------------- |
+| Introduction to Deep Learning(6.S191) **MIT**   | [YouTube](https://tinyurl.com/y2jmc89y)                                           |
+| Deep Learning **NYU**                           | [WebSite](https://atcold.github.io/pytorch-Deep-Learning/)                        |
+| Deep Learning Lecture Series **DeepMind x UCL** | [YouTube](https://tinyurl.com/create.php)                                         |
+| Deep Learning (CS230) **Stanford**              | [WebSite](https://cs230.stanford.edu/lecture/)                                    |
+| CNN for Visual Recognition(CS231n) **Stanford** | [WebSite ](https://cs231n.github.io/) \| [YouTube](https://tinyurl.com/y2gghbvs)  |
+|                                                 |                                                                                   |

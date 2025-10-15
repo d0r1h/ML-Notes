@@ -19,7 +19,7 @@ Linear Algebra is equal to Vectors (V) and Matrices (M) and operation on them, V
 
 * Line  -  Equation of a line in two dimensions is : `y = mx + c`&#x20;
 
-![](<../.gitbook/assets/image (1).png>)
+![](../.gitbook/assets/image.png)
 
 * Plane - A line in three dimensions called a plane and its equation is given by: `ax+by+cz = d`
 * Hyperplane - A hyperplane is a subspace whose dimension is one less than that of its ambient space.&#x20;
@@ -242,7 +242,7 @@ V = inv(M)      # inverse equivalence
 * **Rotation Transformation**
 * **Identity Matrix Transformation**
 
-****
+
 
 **Matrix Properties**
 
@@ -265,7 +265,7 @@ The Inverse of matrix A can be written as:
 
 **Gaussian Elimination** to get Matrix Inverse:
 
-![](../.gitbook/assets/Kaagaz\_20210511\_222234005243-1.jpg)
+![](../.gitbook/assets/Kaagaz_20210511_222234005243-1.jpg)
 
 ### Orthogonal Matrix&#x20;
 
@@ -298,11 +298,11 @@ A matrix with orthonormal row and column vectors is called an orthogonal matrix.
 {% endtab %}
 {% endtabs %}
 
-## &#x20; ****  Application of Linear Algebra:
+## &#x20; Application of Linear Algebra:
 
 **Picture**:&#x20;
 
-* Computers use a **** discrete form of pictures •
+* Computers use a discrete form of pictures •
 * The process of transforming continuous space to discrete space is called digitization&#x20;
 * Steps in digitization 1. Picture 2. Sampling + Quantization 3. Digital picture
 
@@ -332,10 +332,10 @@ PIXELS are ATOMIC ELEMENTS called PICTURE ELEMENTS of a digital image.&#x20;
 * Spatial Domain - 2D - the physical 2D location of the pixels&#x20;
 * Intensity domain - 3rd Dimension - the actual pixel value
 
-**Image Representation**: **** Image is represneted as n-dimensional array where each pixel is a vector(1d array(\[R,G,B]) of intensity values).&#x20;
+**Image Representation**: Image is represneted as n-dimensional array where each pixel is a vector(1d array(\[R,G,B]) of intensity values).&#x20;
 
 * GrayScale Image&#x20;
-* Color Image \[[LINK](https://ai.stanford.edu/\~syyeung/cvweb/tutorial1.html)]
+* Color Image \[[LINK](https://ai.stanford.edu/~syyeung/cvweb/tutorial1.html)]
 
 ![](<../.gitbook/assets/image (10).png>)
 
@@ -351,7 +351,7 @@ When the color of every pixel is changed, using a function that gets as input th
 
 &#x20;                                         **I \* W = ∑ ∑ I(K,L) W(i+K, j+L)**
 
-* Kernel is also called convolution matrix, mask **** or **** filter
+* Kernel is also called convolution matrix, mask or filter
 * Convolution with different kernels can be used for different image transformations/filtering
 * You can use different kernels for different Feature extraction like edge detection, Sharpen, blurring, etc.
 
@@ -403,19 +403,19 @@ In practice, this algorithm is used for data points that are not necessarily ran
 {% tab title="First Tab" %}
 {% embed url="https://www.youtube.com/watch?v=g-Hb26agBFg" %}
 
-****
+
 {% endtab %}
 
 {% tab title="Second Tab" %}
 {% embed url="https://www.youtube.com/watch?v=7bpjiA2VDZE" %}
 
-****
+
 {% endtab %}
 
 {% tab title="" %}
 {% embed url="https://www.youtube.com/watch?v=FgakZw6K1QQ" %}
 
-****
+
 {% endtab %}
 {% endtabs %}
 

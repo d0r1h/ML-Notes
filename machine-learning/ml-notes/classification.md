@@ -30,7 +30,7 @@ Odds vs Probability
 
 Odds Ratio:- Odds ratio can be used to determine the impact of a feature on the target variable.  In our example odds ratio of Email being spam or not being spam
 
-![](<../../.gitbook/assets/image (24).png>)
+![](<../../.gitbook/assets/image (25).png>)
 
 ## Logistic Regression
 
@@ -42,7 +42,7 @@ In the email example if probability > threshold then email is spam.&#x20;
 
 The sigmoid function is a mathematical function which is S-shaped and is given by and it exists between 0 to 1.
 
-![](<../../.gitbook/assets/image (27).png>)
+<div align="center"><img src="../../.gitbook/assets/image (27).png" alt=""></div>
 
 **Assumptions of Logistic Regression**
 
@@ -98,15 +98,15 @@ There are various pseudo R2s developed that are similar on the scale, i.e. on \[
 
 **McFadden R2**: If comparing two models on the same data, we consider the model which has higher value is considered to be better. The pseudo R2 in the python output is the McFadden R2.
 
-![](<../../.gitbook/assets/image (31).png>)
+![](<../../.gitbook/assets/image (30).png>)
 
 **Cox-Snell R2**: It is similar to the McFadden R2, the likelihood is the product of probability N observations of the dataset. Thus the Nth square root of the provides an estimate of each target value. The R2 Cox-Snell can be greater than 1, and for a model with likelihood 1, i.e if predictions are perfect, then the denominator becomes.&#x20;
 
-![](<../../.gitbook/assets/image (32).png>)
+![](<../../.gitbook/assets/image (33).png>)
 
 **Nagelkerke R2**: It is based on Cox-Snell R2 , it scales the values so that the maximum is 1. If the full model predicts the outcome perfectly, i.e it has likelihood = 1, then R2 Nagelkerke = 1 and similarly, if the likelihood of null model is equal to that of full model then R2 Nagelkerke = 0.
 
-![](<../../.gitbook/assets/image (37).png>)
+![](<../../.gitbook/assets/image (34).png>)
 
 ```
 # Logistic Regression using statsmodels
@@ -229,14 +229,14 @@ classification_report(y_test, y_pred)
 
 ![](<../../.gitbook/assets/image (39).png>)
 
-| Kappa             | Interpretation           |
-| ----------------- | ------------------------ |
-| < **** 0          | No agreement             |
-| 0-0.2             | Slight agreement         |
-| 0.2-0.4           | Fair agreement           |
-| 0.4-0.6           | Moderate agreement       |
-| 0.6-0.8           | Substantial agreement    |
-| 0.8-1             | Almost perfect agreement |
+| Kappa        | Interpretation           |
+| ------------ | ------------------------ |
+| < 0          | No agreement             |
+| 0-0.2        | Slight agreement         |
+| 0.2-0.4      | Fair agreement           |
+| 0.4-0.6      | Moderate agreement       |
+| 0.6-0.8      | Substantial agreement    |
+| 0.8-1        | Almost perfect agreement |
 
 ```
 kappa = cohen_kappa_score(y_test, y_pred)
@@ -361,7 +361,7 @@ Assumptions of Naïve Bayes
 Example of Spam/Ham using Naive Bayes
 {% endhint %}
 
-Laplace smoothing method**:** To solve the zero probability problem we use Laplace smoothing method. Add α to every count so the count is never zero and α > 0. Generally, α = 1.&#x20;
+Laplace smoothing metho&#x64;**:** To solve the zero probability problem we use Laplace smoothing method. Add α to every count so the count is never zero and α > 0. Generally, α = 1.&#x20;
 
 Naïve Bayes Classifier available in the scikit learn library:
 
@@ -398,7 +398,7 @@ For String data
 * Longest Common Sequence
 * Hamming distance
 
-The K - Nearest Neighbour (KNN) algorithm classifies the data based on the similarity measure**,** K specifies the number of nearest neighbors to be considered, does not require the data to be trained and KNN does not return the model.
+The K - Nearest Neighbour (KNN) algorithm classifies the data based on the similarity measur&#x65;**,** K specifies the number of nearest neighbors to be considered, does not require the data to be trained and KNN does not return the model.
 
 * It is Instance based learning algorithm: uses training instances to make predictions.
 * Lazy learning algorithm: does not require a model to be trained
@@ -476,7 +476,7 @@ An approach to handle overfitting is **pruning.** Pruning is a technique that re
 
 **Measures of Purity of a node**
 
-Entropy**:**&#x20;
+Entrop&#x79;**:**&#x20;
 
 Gini Index:&#x20;
 
@@ -512,7 +512,7 @@ For example: Voting classifier
 
 Random Forest consists of several independent decision trees that operate as an ensemble, It is an ensemble learning algorithm based on bagging. Train decision tree models on bootstrap samples where variables are selected at random. The aggregate output from these tree is considered as the final output.&#x20;
 
-![](<../../.gitbook/assets/image (50).png>)
+![](<../../.gitbook/assets/image (48) (1).png>)
 
 **Hyperparameter**
 

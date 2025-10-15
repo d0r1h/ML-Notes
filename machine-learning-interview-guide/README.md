@@ -8,7 +8,7 @@ description: >-
 
 `I have curated all these resources from the public domain.`
 
-``
+
 
 **What you can expect from this Guide:**
 

@@ -206,7 +206,7 @@ This file contains graph/plots for all the above Analysis.
 
 
 
-&#x20;                                                  **                                                   `Data PreProcessing`**
+&#x20;                                                  **`Data PreProcessing`**
 
 So before moving in, we check datatype of variables and if some column are not correct datatype, we shall fix them first.  We can check by following code.&#x20;
 
@@ -403,7 +403,7 @@ The outlier is a point which falls below **Q1 – 1.5×IQR** or above **Q3 + 1.5
 
 The data may contain the variables of the different numerical scales or magnitudes. We scale the variable to get all the variables in the same range or common scale. With this, we can avoid a problem in which some features come to dominate solely because they tend to have larger values than others.&#x20;
 
-Feature scaling is also known as data normalization**.** Since the features have various ranges, it becomes a necessary step in data preprocessing while using machine learning algorithms.
+Feature scaling is also known as data normalizatio&#x6E;**.** Since the features have various ranges, it becomes a necessary step in data preprocessing while using machine learning algorithms.
 
 For example:- In a dataset that has variables age and income. The age of a person is measured in years which can take values between 18 to 65 (retirement age) and the income of a person is in thousands So it is necessary to bring the two features on the same scale to assign appropriate weights
 
