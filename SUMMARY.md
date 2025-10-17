@@ -32,7 +32,7 @@
 * [Vector Database](vector-database/README.md)
   * [RAG System](vector-database/rag-system.md)
 * [Data Science](data-science.md)
-* [Sql](sql.md)
+* [SQL](sql.md)
 * [Books](books.md)
 * [Machine Learning Interview Guide](machine-learning-interview-guide/README.md)
   * [Natural language processing](machine-learning-interview-guide/natural-language-processing.md)
