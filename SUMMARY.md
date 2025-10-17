@@ -29,6 +29,7 @@
   * [LLM Pre and Post Training](llm/llm-pre-and-post-training.md)
 * [Natural language processing](natural-language-processing/README.md)
   * [Voice (Audio) AI](natural-language-processing/voice-audio-ai.md)
+* [Vector Database](vector-database.md)
 * [Data Science](data-science.md)
 * [Sql](sql.md)
 * [Books](books.md)
