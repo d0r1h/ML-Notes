@@ -17,7 +17,7 @@ Similarity search is one of the most popular uses of vector embeddings. Search a
 
 Searching through data for similar items is a common operation in databases, search engines, and many other applications. Finding similar items based on fixed numeric criteria is very straightforward using a query language when we are dealing with traditional databases. For example, finding employees in a database within a fixed salary range. But sometimes we have to answer questions like “Which objects in our inventory are similar to what a user searched for?” The search terms can be vague and can have a lot of variations. For example, a user can search for something generic like “shoes”,“black shoes” or something more precise like “Nike AF-1 LV8”
 
-<figure><img src=".gitbook/assets/unknown (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/unknown (1).png" alt=""><figcaption></figcaption></figure>
 
 Our system must be able to discern between these terms and must understand how a black shoe differs from other shoes. To handle such queries we need a representation that captures the deeper conceptual meaning of the objects. On top of that, in scenarios like these, we might have to work with data to the scale of billions of objects.
 
