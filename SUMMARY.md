@@ -26,6 +26,7 @@
   * [RNN](deep-learning/rnn.md)
 * [LLM](llm/README.md)
   * [CS336 : Language Model from Scratch](llm/cs336-language-model-from-scratch.md)
+  * [LLM Pre and Post Training](llm/llm-pre-and-post-training.md)
 * [Natural language processing](natural-language-processing.md)
 * [Data Science](data-science.md)
 * [Sql](sql.md)
