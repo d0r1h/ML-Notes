@@ -38,4 +38,5 @@
   * [General DS Questions](machine-learning-interview-guide/general-ds-questions.md)
   * [Interview Experience through videos and Blogs](machine-learning-interview-guide/interview-experience-through-videos-and-blogs.md)
 * [Data Analysis](data-analysis.md)
-* [DSA (Data Structure & Algorithms)](dsa-data-structure-and-algorithms.md)
+* [DSA (Data Structure & Algorithms)](dsa-data-structure-and-algorithms/README.md)
+  * [Problems](dsa-data-structure-and-algorithms/problems.md)
