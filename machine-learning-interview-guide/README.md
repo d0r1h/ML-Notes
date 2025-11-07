@@ -6,14 +6,18 @@ description: >-
 
 # Machine Learning Interview Guide
 
-`I have curated all these resources from the public domain.`
+&#x20;                            `I have curated all these resources from the public domain.`
+
+[https://www.interviewnode.com/](https://www.interviewnode.com/) | [https://devinterview.io/](https://devinterview.io/) |&#x20;
+
+
 
 
 
 **What you can expect from this Guide:**
 
 * Machine Learning System Design
-* Extra Recourses and Interview&#x20;
+* Extra Resources and Interview&#x20;
 * Computer Vision and NLP Question
 * Python and Coding Questions
 * Interview Experience through videos and Blogs
