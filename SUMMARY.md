@@ -44,3 +44,6 @@
 * [Data Analysis](data-analysis.md)
 * [DSA (Data Structure & Algorithms)](dsa-data-structure-and-algorithms/README.md)
   * [Problems](dsa-data-structure-and-algorithms/problems.md)
+* [Profiles & Interview](profiles-and-interview/README.md)
+  * [Machine Learning Engineer](profiles-and-interview/machine-learning-engineer.md)
+  * [Data Scientist](profiles-and-interview/data-scientist.md)
