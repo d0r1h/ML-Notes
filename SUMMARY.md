@@ -49,3 +49,4 @@
   * [Data Scientist](profiles-and-interview/data-scientist.md)
   * [Interview Process & Exp.](profiles-and-interview/interview-process-and-exp..md)
   * [AI Engineer](profiles-and-interview/ai-engineer.md)
+* [Cuda and Kernels](cuda-and-kernels.md)
