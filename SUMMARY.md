@@ -27,6 +27,7 @@
 * [LLM](llm/README.md)
   * [CS336 : Language Model from Scratch](llm/cs336-language-model-from-scratch.md)
   * [LLM Pre and Post Training](llm/llm-pre-and-post-training.md)
+* [Quantization](quantization.md)
 * [Natural language processing](natural-language-processing/README.md)
   * [Voice (Audio) AI](natural-language-processing/voice-audio-ai.md)
 * [Vector Database](vector-database/README.md)
