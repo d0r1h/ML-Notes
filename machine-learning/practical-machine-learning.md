@@ -6,7 +6,7 @@ description: >-
 
 # Machine Learning Algorithms
 
-Landscap of machine learning algorithms based on data and their mechanics...&#x20;
+Landscape of machine learning algorithms based on data and their mechanics...&#x20;
 
 
 
