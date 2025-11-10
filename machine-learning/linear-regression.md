@@ -7,9 +7,16 @@ description: >-
 
 # Linear Regression
 
+Linear Regression is a simple and powerful model for predicting a numeric response from a set of one or more independent variables.&#x20;
+
+
+
+
+
 Dependent and Independent Variable
 
-**Y** -> variable we wish to predict, i.e. dependent, Response, or Target variable                            **x** -> variable used to predict Y, independent, predictor variable
+* **Y** -> variable we wish to predict, i.e. dependent, Response, or Target variable                           &#x20;
+* **x** -> variable used to predict Y, independent, predictor variable
 
 ## Regression Analysis
 
@@ -19,7 +26,7 @@ Regression Analysis allows us to examine which independent variables have more i
 
 A simple linear regression model(also called bivariate regression) has one independent variable x that linear relationship with dependent variable Y.
 
-![](<../../.gitbook/assets/image (16).png>)
+![](<../.gitbook/assets/image (16).png>)
 
 here,  **a** – Intercept,  **b** – Slope, and  **ϵ** – Residual (error)
 

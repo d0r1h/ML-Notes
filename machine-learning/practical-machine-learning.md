@@ -1,8 +1,8 @@
 ---
-description: Concept and implementation from scratch in Numpu and in scikit-learn
+description: Concept and implementation from scratch in Numpy and in scikit-learn
 ---
 
-# Linear Regression
+# Logistic Regression
 
 
 
