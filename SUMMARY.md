@@ -50,3 +50,8 @@
   * [Interview Process & Exp.](profiles-and-interview/interview-process-and-exp..md)
   * [AI Engineer](profiles-and-interview/ai-engineer.md)
 * [Cuda and Kernels](cuda-and-kernels.md)
+* [ML Design](ml-design/README.md)
+  * [ETA Prediction for Deliveries/Rides](ml-design/eta-prediction-for-deliveries-rides.md)
+* [Book Notes](book-notes/README.md)
+  * [THE ART OF INVISIBILITY](book-notes/the-art-of-invisibility.md)
+* [Page](page.md)
