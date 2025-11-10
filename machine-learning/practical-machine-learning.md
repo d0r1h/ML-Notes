@@ -1,8 +1,14 @@
 ---
-description: Code for Different Machine Leaning Algorithms in scikit-learn
+description: >-
+  Concept and implementation of Different Machine Leaning Algorithms from
+  scratch in Numpu and in scikit-learn
 ---
 
-# Practical Machine Learning
+# Machine Learning Algorithms
+
+Landscap of machine learning algorithms based on data and their mechanics...&#x20;
+
+
 
 Linear Regression
 

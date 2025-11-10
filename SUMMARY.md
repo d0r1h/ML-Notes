@@ -9,7 +9,7 @@
   * [Python Topics](python/python-topics.md)
   * [1000+ Python scripts](python/1000+-python-scripts.md)
 * [Machine Learning](machine-learning/README.md)
-  * [Practical Machine Learning](machine-learning/practical-machine-learning.md)
+  * [Machine Learning Algorithms](machine-learning/practical-machine-learning.md)
   * [ML Notes](machine-learning/ml-notes/README.md)
     * [Loss Function](machine-learning/ml-notes/loss-function.md)
     * [Linear Regression](machine-learning/ml-notes/linear-regression.md)
