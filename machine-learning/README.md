@@ -1,4 +1,10 @@
-# Machine Learning
+---
+description: >-
+  Concept and implementation of Different Machine Leaning Algorithms from
+  scratch in Numpu and in scikit-learn
+---
+
+# Machine Learning Algorithms.
 
 ![](<../.gitbook/assets/Machine Learning.png>)
 
@@ -38,3 +44,8 @@
   * Autoencoders
     * seq2seq
 * **Transformer based DNN**
+  * Encoder-decoder
+  * Encoder Only
+  * Decoder Only&#x20;
+
+&#x20;                      Landscape of machine learning algorithms based on data and their mechanics...&#x20;
