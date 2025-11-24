@@ -56,3 +56,4 @@
 * [Book Notes](book-notes/README.md)
   * [THE ART OF INVISIBILITY](book-notes/the-art-of-invisibility.md)
 * [Reinforcement Learning](reinforcement-learning.md)
+* [Diffusion](diffusion.md)
