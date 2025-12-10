@@ -195,3 +195,7 @@ To check the significance of the regression model we use the F tes&#x74;**,** wh
 * Root Mean Squared Error (RMSE)
 * Mean Absolute Error (MAE)
 * Mean Absolute Percentage Error (MAPE)
+
+
+
+[https://www.kaggle.com/code/marcinrutecki/regression-models-evaluation-metrics](https://www.kaggle.com/code/marcinrutecki/regression-models-evaluation-metrics)&#x20;

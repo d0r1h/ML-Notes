@@ -23,14 +23,12 @@ Patterns videos and courses :-&#x20;
 
 * [Free Coding Interview Tutorial - Cracking the Coding interview: Learn 5 Essential Patterns | Udemy](https://www.udemy.com/course/learn-5-important-patterns-for-coding-interview-problems/)
 * [Grokking Dynamic Programming Patterns: Coding Interviews | Udemy](https://www.udemy.com/course/dynamic-programming-algorithms-coding-interview-questions/?couponCode=LEARNNOWPLANS)&#x20;
-* [Two Pointer and Sliding Window Playlist | Language Independent Course - YouTube](https://www.youtube.com/playlist?list=PLgUwDviBIf0q7vrFA_HEWcqRqMpCXzYAL)\
-
+* [Two Pointer and Sliding Window Playlist | Language Independent Course - YouTube](https://www.youtube.com/playlist?list=PLgUwDviBIf0q7vrFA_HEWcqRqMpCXzYAL)<br>
 
 
 
 \
-\
-
+<br>
 
 #### Time and Space Complexity&#x20;
 
@@ -38,8 +36,7 @@ Patterns videos and courses :-&#x20;
 
 
 
-Following are resources for the same to understand T\&S complexity ..... \
-
+Following are resources for the same to understand T\&S complexity ..... <br>
 
 * [Step-by-Step Guide: Calculating Time and Space Complexity | Algorithm Examples](https://blog.algorithmexamples.com/big-o-notation/step-by-step-guide-calculating-time-and-space-complexity/)&#x20;
 * [Time and Space Complexity Tutorials & Notes | Basic Programming | HackerEarth](https://www.hackerearth.com/practice/basic-programming/complexity-analysis/time-and-space-complexity/tutorial/)&#x20;

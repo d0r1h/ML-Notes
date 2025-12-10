@@ -25,4 +25,4 @@ icon: cloud-binary
 
 [Data Analytics Course, Certification, Syllabus, Fees](https://pwskills.com/course/data-analytics/)
 
-\
+<br>

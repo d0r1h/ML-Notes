@@ -15,13 +15,11 @@
 
 online persona with your real-world persona. You just can’t.”
 
-\
-
+<br>
 
 PROGRAMS/TOOL
 
-\
-
+<br>
 
 1. Immersion \[created at MIT ]
 2. Anonymous remailer  :- Mask email's IP address
@@ -45,13 +43,11 @@ PROGRAMS/TOOL
 \
 \
 \
-\
-
+<br>
 
 NOTES :
 
-\
-
+<br>
 
 1. When Download any app for text messaging from app store , look for OTR(off-the record) messaging is higher-stand E2E protocol&#x20;
 2. Private browsing doesn’t create temporary files, and therefore it keeps your browsing history off your laptop or mobile device.
@@ -61,8 +57,7 @@ NOTES :
 
 EXIF data in a digital image contains : the date and time when the picture was snapped, the make and model number of the camera, longitude and latitude of the place&#x20;
 
-\
-
+<br>
 
 6. Accelerometer device\[chip] responsible for determining the orientation of your device, whether you are holding it in landscape or portrait view.&#x20;
 7. Automated license plate recognition (ALPR) technology used by Law enforcement to recognize the vehicles.
@@ -81,19 +76,16 @@ EXIF data in a digital image contains : the date and time when the picture was s
 
 &#x20;                     4\.&#x20;
 
-\
-
+<br>
 
 12. &#x20;Wiping data is not the same as deleting data. Deleting data only changes the MBR entry for a file (the index used to find parts of the file on the hard drive); the file (or some of its parts) remains on the hard drive until new data is written over that part of the hard drive.&#x20;
 13. Wiping Data, securely overwrites the data  in the file with random data and this can be done using any File-shredding software.
 
-\
-
+<br>
 
 LINKS :
 
-\
-
+<br>
 
 1. [https://www.wired.com/2017/12/digital-security-guide/](https://www.wired.com/2017/12/digital-security-guide/)
 2. [https://www.openwall.com/john/](https://www.openwall.com/john/)
@@ -112,9 +104,8 @@ LINKS :
 15. [https://hackaday.com/tag/proxyham/](https://hackaday.com/tag/proxyham/)
 16. [https://www.bitrefill.com./](https://www.bitrefill.com/)
 17. [https://panopticlick.eff.org/](https://panopticlick.eff.org/)
-18. \
+18. <br>
 
-
 \
 \
 \
@@ -122,7 +113,6 @@ LINKS :
 \
 \
 \
-\
-
+<br>
 
 You’re only as secure as your weakest link

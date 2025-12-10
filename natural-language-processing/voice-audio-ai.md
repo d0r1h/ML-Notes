@@ -9,8 +9,7 @@ icon: microphone
 
 
 
-There are two types of architecture for Voice AI agents :- \
-
+There are two types of architecture for Voice AI agents :- <br>
 
 1. **Speech to Speech** :- Native Audio handling using model in real time&#x20;
 2. **Chained** :- Transforming audio to text and back using models&#x20;
@@ -21,13 +20,11 @@ Core Pipeline Component for Any Chained Voice AI Agent :-&#x20;
 
 <figure><img src="../.gitbook/assets/unknown (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-A chained architecture processes audio sequentially, converting audio to text, generating intelligent responses using large language models (LLMs), and synthesizing audio from text. \
-
+A chained architecture processes audio sequentially, converting audio to text, generating intelligent responses using large language models (LLMs), and synthesizing audio from text. <br>
 
 1. **Speech to Text (ASR)** → The foundation of any voice agent begins with accurate speech recognition. Modern ASR systems like Deepgram, Whisper, and AssemblyAI provide the critical first step of converting audio input into processable text. The choice of ASR provider significantly impacts accuracy, especially in specialized domains like healthcare where medical vocabulary precision is paramount.&#x20;
 2. **Large Language Model (LLM)** → At the heart of the system lies the reasoning engine. Popular choices include OpenAI’s GPT models, Anthropic’s Claude, Meta’s Llama variants, and specialized models from providers like Deepseek and Gemini. For production applications requiring low latency, fast inference providers like Groq, Cerebras, and TogetherAI have become increasingly popular.
-3. **Text to Speech (TTS)** → The final output layer converts generated responses back into natural-sounding speech. ElevenLabs has emerged as a leader in this space, offering high-quality voice synthesis including custom voice cloning capabilities. Other notable providers include Microsoft Azure Speech Services and Google’s WaveNet technology.\
-
+3. **Text to Speech (TTS)** → The final output layer converts generated responses back into natural-sounding speech. ElevenLabs has emerged as a leader in this space, offering high-quality voice synthesis including custom voice cloning capabilities. Other notable providers include Microsoft Azure Speech Services and Google’s WaveNet technology.<br>
 
 Advance Processing Layers
 
