@@ -1,22 +1,34 @@
 ---
 description: >-
-  In Statistic, linear regression is a linear approach to modelling the
-  relationship between a scalar response(Y) and one or more explanatory
-  variables(X)
+  Linear regression is a linear approach to modelling the relationship between a
+  scalar response(Y) and one or more explanatory variables(X)
 ---
 
 # Linear Regression
 
-Linear Regression is a simple and powerful model for predicting a numeric response from a set of one or more independent variables.&#x20;
-
-
-
-
+Linear Regression is a simple and powerful model approach for predicting a numeric response from a set of one or more independent variables. It models the relationship between a dependent variable **y**  and one or more independent variables **X**. In Linear regression the goal is to find a line (or hyperplane) that best fits the data points by minimizing the error between predicted and actual values. Line in case of simple and hyperplane in case of multi linear regression.&#x20;
 
 Dependent and Independent Variable
 
-* **Y** -> variable we wish to predict, i.e. dependent, Response, or Target variable                           &#x20;
-* **x** -> variable used to predict Y, independent, predictor variable
+* **y** -> variable we wish to predict, i.e. dependent, Response, or Target variable                           &#x20;
+* **X** -> variable used to predict Y, independent, predictor variable
+
+**In Linear Regression there are two approaches for the training :-**&#x20;
+
+1. Direct closed form equation (OLS)&#x20;
+2. Gradient Descent (Iterative)&#x20;
+
+We'll see these both in detailed ....&#x20;
+
+**Based on the type of input data this algorithms can be applied in three different forms**&#x20;
+
+1. Simple Linear Regression
+2. Multi Linear Regression
+3. Polynomial Regression&#x20;
+
+
+
+
 
 ## Regression Analysis
 
