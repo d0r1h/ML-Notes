@@ -26,31 +26,41 @@ We'll see these both in detailed ....&#x20;
 2. Multi Linear Regression
 3. Polynomial Regression&#x20;
 
+#### Simple Linear Regression&#x20;
 
+A simple linear regression model (also called bivariate regression) has one independent variable x that linear relationship with dependent variable Y and equation for simple linear regression would be :-&#x20;
 
+$$
+y = mx + c
+$$
 
+$$
+m
+$$
 
-## Regression Analysis
-
-Regression Analysis allows us to examine which independent variables have more impact on the dependent variable and investigates and models the relationship between variables. It determines which variables can be ignored, which ones are most important, and how they influence each other.&#x20;
-
-### Simple Linear Regression
-
-A simple linear regression model(also called bivariate regression) has one independent variable x that linear relationship with dependent variable Y.
-
-![](<../.gitbook/assets/image (16).png>)
-
-here,  **a** – Intercept,  **b** – Slope, and  **ϵ** – Residual (error)
-
-Intercept:                                                                 &#x20;
-
-Slope:&#x20;
+m - weight or slope and c -  intercept or bias&#x20;
 
 Error term/ Residual represents the distance of the observed value from the value predicted by the regression line.   **e = y - y^** for each observation.
 
-### Multiple Linear Regression
+#### Multi Linear Regression&#x20;
 
-It has multiple&#x20;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Measures of Variation <a href="#id-4.2-measures-of-variation" id="id-4.2-measures-of-variation"></a>
 
