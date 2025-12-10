@@ -50,13 +50,22 @@ To calculate the value of feature weights or slope (**m**) and intercept (**c**)
 
 $$
 m = \frac{\sum_{i=1}^{m} (x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{m} (x_i - \bar{x})^2}
+$$
+
+$$
 \newline
 c = \bar{y} - m\bar{x}
 $$
 
 Here x\_bar and y\_bar are the avg value of  cgpa and package.&#x20;
 
-Equation of MSE for linear regression model
+Equation of MSE for linear regression model :-&#x20;
+
+$$
+\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+$$
+
+For every true value y and predicted value y\_bar for the same data, we calculate the error.&#x20;
 
 #### Multi Linear Regression&#x20;
 
