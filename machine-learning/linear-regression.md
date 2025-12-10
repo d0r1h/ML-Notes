@@ -28,19 +28,35 @@ We'll see these both in detailed ....&#x20;
 
 #### Simple Linear Regression&#x20;
 
-A simple linear regression model (also called bivariate regression) has one independent variable x that linear relationship with dependent variable Y and equation for simple linear regression would be :-&#x20;
+A simple linear regression model (also called bi variate regression) has one independent variable x that linear relationship with dependent variable Y. Let’s understand Simple Linear Regression with example,&#x20;
+
+You have dataset of 10k student which consists of their CGPA and Package they got in the placement, so here is input feature is CGPA and target variable is package, X = CGPA and y = Package&#x20;
+
+So equation of simple linear regression would
 
 $$
 y = mx + c
 $$
 
+Here **y** is the target or predicted variable and **X** is input data, and **m/c** are the model parameters which model learn from the data and in starting both are randomly initialized.  Here the model is a linear function of the input feature x. A linear model makes predictions by simply computing a weighted sum of input features and a constant called bias or intercept term.
+
+**m** - weight or slope and **c** -  intercept or bias&#x20;
+
+For training a Linear Regression model we need to find the values of m and c (or model parameter ) such that they reduce th Error /  MSE (mean squared Error) i.e, difference between actual value of y and predicted value of y^.  Error term/ Residual represents the distance of the observed value from the value predicted by the regression line.   **e = y - y^** for each observation.
+
+So as mentioned earlier, we have a dataset of 10k (Training 9k and Validation set 1k), we need to find the feature weight for all these 9k students, which minimizes the error. &#x20;
+
+To calculate the value of feature weights or slope (**m**) and intercept (**c**)&#x20;
+
 $$
-m
+m = \frac{\sum_{i=1}^{m} (x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{m} (x_i - \bar{x})^2}
+\newline
+c = \bar{y} - m\bar{x}
 $$
 
-m - weight or slope and c -  intercept or bias&#x20;
+Here x\_bar and y\_bar are the avg value of  cgpa and package.&#x20;
 
-Error term/ Residual represents the distance of the observed value from the value predicted by the regression line.   **e = y - y^** for each observation.
+Equation of MSE for linear regression model
 
 #### Multi Linear Regression&#x20;
 
