@@ -176,17 +176,86 @@ Where:
 
 This process yields the estimated coefficients β, which describe the relationship between the independent variables and the dependent variable in the model.
 
+| Aspect                    | Simple Linear Regression               | Multiple Linear Regression                       |
+| ------------------------- | -------------------------------------- | ------------------------------------------------ |
+| **Equation**              | Y' = b0 + b1X + ε                      | Y' = b0 + b1X1 + b2X2 + ... + bkXk + ε           |
+| **Number of Variables**   | One independent variable (X)           | Multiple independent variables (X1, X2, ..., Xk) |
+| **Slope Calculation**     | b1 = (Σ(X - X̄)(Y - Ȳ)) / (Σ(X - X̄)²) | β = (X'X)^{-1}X'Y                                |
+| **Intercept Calculation** | b0 = Ȳ - b1X̄                          | Part of the β coefficients calculation           |
+|                           |                                        |                                                  |
+
+```py
+import numpy as np
+
+class MultipleLinearRegression:
+    '''
+    Implementation of Multiple Linear Regression
+    '''
+    
+    def __init__(self): 
+        self.coef_ = None
+        self.intercept_ = None
+
+    def fit(self, X_train, X_test):
+        X_train = np.insert(X_train, 0 , 1, axis=1) # insert 1 at the 0th index as column 
+
+        # calculating the coefficient 
+        betas = np.linalg.inv(np.dot(X_train.T, X_train)).dot(X_train.T).dot(y_train)
+        self.intercept_ = betas[0]
+        self.coef_ = betas[1:]
+
+    def predict(self, X_test):
+        y_pred = np.dot(X_test, self.coef_) + self.intercept_
+        return y_pred
+```
 
 
 
+Above both discussed, Simple and Multi Linear Regression are closed forms solutions also known as OLS, and it solves a system of linear equations. &#x20;
 
+<br>
 
+Ordinary Least Squares (OLS) linear regression does not use an iterative learning process (like weight updations and all). It computes the optimal slope(s) and intercept in one shot, using a closed-form mathematical formula derived from calculus. It's like solving “Given these points, draw the best straight line.” You compute the answer mathematically.&#x20;
 
+<br>
 
+And reason for that is :-&#x20;
 
+<br>
 
+For linear regression with features XXX and target yyy, OLS finds parameter vector β\betaβ by solving:
 
+<br>
 
+β=(XTX)−1XTy.
+
+This formula comes from setting the derivative of the MSE loss to zero and solving the resulting linear equations.
+
+<br>
+
+So the learning process is literally:
+
+1. Compute matrix XTXX^T XXTX
+2. Invert it (or use numerical equivalent)
+3. Compute (XTX)−1XTy(X^T X)^{-1} X^T y(XTX)−1XTy
+4. Done. Those are your slopes & intercept.
+
+It’s deterministic and exact (assuming perfect numerical stability).
+
+When dataset is huge (very large n or p)
+
+Modern libraries sometimes avoid the closed-form OLS because:
+
+* Matrix inversion is expensive
+* Memory cost high: storing XTXX^T XXTX\
+  <br>
+
+In such cases the model may use:
+
+* Gradient Descent
+* Stochastic Gradient Descent (SGD)
+* Mini-batch GD
+* Coordinate descent (for Lasso)
 
 ### Measures of Variation <a href="#id-4.2-measures-of-variation" id="id-4.2-measures-of-variation"></a>
 
