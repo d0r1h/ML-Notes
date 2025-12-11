@@ -260,9 +260,11 @@ Multicollinearity arises when the independent variables have high correlation am
   * Correlation Matrix
   * Variance Inflation Factor (VIF)
 
-Determinant of the correlation matrix: Let D be the determinant of the correlation matrix. Then 0 < D < 1. `D=0 High multicollinearity | D=1 No multicollinearity.`
+**Determinant of the correlation matrix:**&#x20;
 
-Condition Number (CN):&#x20;
+Let D be the determinant of the correlation matrix. Then 0 < D < 1, then D=0 High multicollinearity and D=1 No multicollinearity.
+
+**Condition Number (CN):**&#x20;
 
 | Value           | Interpretation             |
 | --------------- | -------------------------- |
@@ -296,48 +298,28 @@ It occurs If the relationship between the target and predictor variables is non-
 
 #### Homoscedasticity
 
-If the residuals have constant variance across different values of the predicted values, then it is known as `Homoskedasticity`. The absence of homoskedasticity is known as, heteroskedasticity. One of the assumptions of linear regression is that heteroskedasticity should not be present. Let us study two different tests to check the presence of heteroskedasticity.&#x20;
+If the residuals have constant variance across different values of the predicted values, then it is known as `Homoskedasticity`. The absence of homoskedasticity is known as, heteroskedasticity. One of the assumptions of linear regression is that heteroskedasticity should not be present.&#x20;
 
-#### Normality test of Error Terms
+Tests to check the presence of heteroskedasticity (Normality test of Error Terms) .&#x20;
 
 Normality tests are used to determine if a data set is well-modeled by a normal distribution. And it can be done using the following methods.
 
 * Quantile-Quantile Plot
 * Shapiro-Wilk Test
 
-
-
-### Model evaluation metrics
-
-#### **R square**
-
-The R2 value gives the percentage of variation in the response variable explained by the predictor variable&#x73;**.** If the values of R2 = 0.87, it implies that 87% of variation in the response variable is explained by the predictor variables.&#x20;
-
-#### **Adjusted R square**
-
-Adjusted R2 gives the percentage of variation explained by independent variables that actually affect the dependent variabl&#x65;**.**&#x20;
-
-#### **F test for significance**
-
-To check the significance of the regression model we use the F tes&#x74;**,** which is similar to ANOVA for regression. And if p\_value is less than alpha(level of significance) then implies that the model is significant.
-
-### Interaction effect
-
-
-
 ### Measures of Variation <a href="#id-4.2-measures-of-variation" id="id-4.2-measures-of-variation"></a>
 
-**SSE:** It is defined as the sum of the squared difference between the actual value and the predicted value.
+Measures of variation quantify **how well a linear regression model captures the variability in the dependent variable (Y)**. They help evaluate model fit, diagnose issues, and compare models.
 
-**SSR:** It is defined as the sum of the squared difference between the predicted value and the mean of the dependent variable.
+**Following are different methods for measuring variation :**-&#x20;
 
-**SST**: It is the sum of the squared difference between the actual value and the mean of the dependent variable. And SST (Total variation) is the sum of SSR and SSE.
+**SSR:** Sum of Square Residual, It is defined as the sum of the squared difference between the predicted value and the mean of the dependent variable.
+
+**SST**: Sum of Square total, It is the sum of the squared difference between the actual value and the mean of the dependent variable. And SST (Total variation) is the sum of SSR and SSE.
+
+**SEE:** The SEE (Sum of Square Explained) is the measure of the variability of actual values around the prediction line. The smaller the value of SEE better is the model. It is defined as the sum of the squared difference between the actual value and the predicted value.
 
 **Coefficient of Determination (R-Squared):** The coefficient of determination explains the percentage of variation in the dependent variable that the independent variables explain collectively.&#x20;
-
-**SEE:** The SEE is the measure of the variability of actual values around the prediction line. The smaller the value of SEE better is the model.
-
-
 
 ### Model Performance Metrics
 
