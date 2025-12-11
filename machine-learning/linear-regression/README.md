@@ -26,7 +26,7 @@ We'll see these both in detailed ....&#x20;
 2. Multi Linear Regression
 3. Polynomial Regression&#x20;
 
-#### Simple Linear Regression&#x20;
+### Simple Linear Regression&#x20;
 
 A simple linear regression model (also called bi variate regression) has one independent variable x that linear relationship with dependent variable Y. Let’s understand Simple Linear Regression with example,&#x20;
 
@@ -137,7 +137,7 @@ print(f'intercept_ : {lr.c}')
 pred  = lr.predict(X_test)
 ```
 
-#### Multi Linear Regression&#x20;
+### Multi Linear Regression&#x20;
 
 When we have more than one input features, Multi Linear Regression comes into picture, which is mostly the case in real world. In simple linear regression we try to fit the optimal line, but in multi we try to fit the plane(3D) or hyperplane (nD).&#x20;
 
@@ -237,35 +237,17 @@ In such cases the model may use:
 * Mini-batch GD
 * Coordinate descent (for Lasso)
 
-
-
-
-
-### Measures of Variation <a href="#id-4.2-measures-of-variation" id="id-4.2-measures-of-variation"></a>
-
-**SSE:** It is defined as the sum of the squared difference between the actual value and the predicted value.
-
-**SSR:** It is defined as the sum of the squared difference between the predicted value and the mean of the dependent variable.
-
-**SST**: It is the sum of the squared difference between the actual value and the mean of the dependent variable. And SST (Total variation) is the sum of SSR and SSE.
-
-**Coefficient of Determination (R-Squared):** The coefficient of determination explains the percentage of variation in the dependent variable that the independent variables explain collectively.&#x20;
-
-**SEE:** The SEE is the measure of the variability of actual values around the prediction line. The smaller the value of SEE better is the model.
-
 ### Assumptions of Linear Regression
 
-Before building a model
+While OLS is simple straight forward, it's correctness depends on some pre defined assumptions and these are following :-  &#x20;
 
-* The dependent variable must be numeric
-* Predictors must not show multicollinearity
 
-After building a model
 
-* Linear relationship between dependent and independent variables
-* Independence of observations should exist (Absence of Autocorrelation)
-* The error terms should be homoscedastic
-* The error terms must follow the normal distribution
+* **Multi**-**collinearity** : Predictors must not show multi-collinearity
+* **Linearity** : Linear relationship between dependent and independent variables
+* **Independence** : Independence of observations should exist (Absence of Autocorrelation)
+* **Homoscedastic** : The error (residuals) terms should be homoscedastic
+* **Normality** : The error terms must follow the normal distribution
 
 #### Multicollinearity
 
@@ -340,6 +322,20 @@ Adjusted R2 gives the percentage of variation explained by independent variables
 To check the significance of the regression model we use the F tes&#x74;**,** which is similar to ANOVA for regression. And if p\_value is less than alpha(level of significance) then implies that the model is significant.
 
 ### Interaction effect
+
+
+
+### Measures of Variation <a href="#id-4.2-measures-of-variation" id="id-4.2-measures-of-variation"></a>
+
+**SSE:** It is defined as the sum of the squared difference between the actual value and the predicted value.
+
+**SSR:** It is defined as the sum of the squared difference between the predicted value and the mean of the dependent variable.
+
+**SST**: It is the sum of the squared difference between the actual value and the mean of the dependent variable. And SST (Total variation) is the sum of SSR and SSE.
+
+**Coefficient of Determination (R-Squared):** The coefficient of determination explains the percentage of variation in the dependent variable that the independent variables explain collectively.&#x20;
+
+**SEE:** The SEE is the measure of the variability of actual values around the prediction line. The smaller the value of SEE better is the model.
 
 
 
