@@ -139,9 +139,24 @@ pred  = lr.predict(X_test)
 
 #### Multi Linear Regression&#x20;
 
+When we have more than one input features, Multi Linear Regression comes into picture, which is mostly the case in real world. In simple linear regression we try to fit the optimal line, but in multi we try to fit the plane(3D) or hyperplane (nD).&#x20;
+
+The formula for multiple linear regression is expressed as:
+
+$$
+y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_p x_p + \epsilon
+= X\beta + \varepsilon
+$$
+
+y is the predicted value of the dependent variable.
 
 
 
+Equation for calculating _betas (intercept and slope)_&#x20;
+
+$$
+\hat{\beta} = (X^{T}X)^{-1}X^{T}y
+$$
 
 
 
