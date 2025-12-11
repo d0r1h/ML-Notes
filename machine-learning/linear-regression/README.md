@@ -148,17 +148,33 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_p x_p + \epsilon
 = X\beta + \varepsilon
 $$
 
-y is the predicted value of the dependent variable.
+* y is the predicted value of the dependent variable&#x20;
+* β<sub>0</sub> is the y-intercept
+* β<sub>1</sub> and β<sub>p</sub> are the regression coefficients(or weights) for each independent variable (x<sub>1</sub> to x<sub>p</sub>)
+* ε represents the error term
 
-
-
-Equation for calculating _betas (intercept and slope)_&#x20;
+In multiple linear regression, the β coefficients can be calculated using the following formula:
 
 $$
 \hat{\beta} = (X^{T}X)^{-1}X^{T}y
 $$
 
+Where:
 
+* X is the design matrix that includes all the independent variables, with a column of ones added for the intercept.
+* y is the vector of observed values of the dependent variable.
+* X<sup>T</sup> is the transpose of the design matrix X.
+* (X<sup>T</sup>X)<sup>-1</sup> is the inverse of the matrix product X<sup>T</sup>X.
+
+#### Calculation Steps
+
+1. **Construct the Design Matrix (X)**: Include all independent variables and a column for the intercept.
+2. **Compute Transpose (X**<sup>**T**</sup>**)**: Calculate the transpose of the design matrix.
+3. **Calculate Matrix Product**: Find the product of X<sup>T</sup> and X.
+4. **Inverse Calculation**: Compute the inverse of the product from the previous step.
+5. **Multiply with X**<sup>**T**</sup>**Y**: Multiply the inverse from step 4 with X<sup>T</sup> and then with the dependent variable vector Y.
+
+This process yields the estimated coefficients β, which describe the relationship between the independent variables and the dependent variable in the model.
 
 
 
