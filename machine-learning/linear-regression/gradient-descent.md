@@ -61,7 +61,7 @@ $$
 
 3. Gradient
 
-The gradient is the vector of partial derivatives, It tells the direction of steepest increase so we move in the opposite direction.&#x20;
+The gradient is the vector of partial derivatives, It tells the direction of steepest increase so we move in the opposite direction. The **derivative** of the function gives us the slope at a particular point. This slope indicates how steep the function is and in which direction it is decreasing the most. By calculating the derivative, we identify the **gradient vector**, which points in the direction of the steepest ascent.
 
 $$
 \nabla J(w,b) =
