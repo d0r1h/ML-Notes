@@ -126,6 +126,17 @@ Above α (alpha) is learning rate which controls the step size.&#x20;
 
 
 
+Improving GD training ➖
+
+1. **Feature Scaling** : Gradient descent converges much faster when features are on the same scale.&#x20;
+2. **Learning Rate Schedules** : Learning rate α controls step size. If LR is too high then algorithm will diverge and if LR is too low then it will be slow to converge. Ideal to use the adaptive Learning rate schedules, reduce α over time.&#x20;
+3. **Regularization** : Adding penalties to the cost function improves generalization and prevents over fitting.
+4. **Momentum** **based** **optimizer** : Instead of using plain GD, uses ADAM, RMSProp etc,.
+5. **Early** **Stopping** : During training, monitor validation loss and stop when it starts increasing → prevents over fitting
+6. **Batch** **Normalization** / **Shuffling** : Shuffle mini-batches each epoch to improve convergence stability, this avoids bias in gradient direction due to data ordering.
+
+
+
 
 
 
