@@ -122,10 +122,6 @@ Above α (alpha) is learning rate which controls the step size.&#x20;
 | Stochastic GD (SGD) | Updates weights for each individual sample  | Fast, good for online learning | Noisy convergence          |
 | Mini-Batch GD       | Uses subset (batch) per step                | Balanced speed and stability   | Needs tuning of batch size |
 
-
-
-
-
 Improving GD training ➖
 
 1. **Feature Scaling** : Gradient descent converges much faster when features are on the same scale.&#x20;
@@ -135,7 +131,7 @@ Improving GD training ➖
 5. **Early** **Stopping** : During training, monitor validation loss and stop when it starts increasing → prevents over fitting
 6. **Batch** **Normalization** / **Shuffling** : Shuffle mini-batches each epoch to improve convergence stability, this avoids bias in gradient direction due to data ordering.
 
-
+#### Code \[Gradient Descent]&#x20;
 
 
 
