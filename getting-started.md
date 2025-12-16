@@ -19,3 +19,7 @@ Example problems are classification and regression. Example algorithms include L
 Input data is not labeled and does not have a known result. A model is prepared by deducing structures present in the input data. This may be to extract general rules. It may be through a mathematical process to systematically reduce redundancy, or it may be to organize data by similarity.&#x20;
 
 Example problems are clustering, conditionality reduction, and association rule learning. Example algorithms include the Apriori algorithm and K-Means.
+
+
+
+[https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/](https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/) &#x20;
