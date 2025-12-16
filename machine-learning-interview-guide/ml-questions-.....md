@@ -151,5 +151,263 @@ Prominent examples: - Adagrad - RMSProp - Adam
 
 
 
+#### Classification
+
+**What's the trade-off between bias and variance & Overfitting and Underfitting?**
+
+Bias → error between average model predictions and the ground truth&#x20;
+
+Variance → variability in the model predictions, how much a model can adjust on the given dataset.&#x20;
+
+Underfitting → Error is high on training data itself and for test data too, accuracy going down for the training data. \[High Bias & Low Variance]&#x20;
+
+Overfitting → Error is low on training data but very high on test data, accuracy going down for the test data. \[Low Bias & High Variance]&#x20;
+
+If our model is too simple and has very few parameters then it may have high bias and low variance. On the other hand, if our model has a large number of parameters then it’s going to have high variance and low bias. So we need to find the right/good balance without overfitting and underfitting the data.
+
+Generalization refers to your model's ability to adapt properly to new, previously unseen data, drawn from the same distribution as the one used to create the model.
+
+A good model will give low bias and low variance&#x20;
+
+Handling overfitting :
+
+1. Cross-validation
+2. Regularization&#x20;
+3. Early Stopping
+4. Pruning (in decision tree-based models)
+5. Dropout (deep learning)
+
+Handling Underfitting:
+
+1. Get more training data
+2. Augmentation (vision and nlp)
+3. Increase the size or number of parameters in the model (no of neuron)&#x20;
+4. Increasing the training time, until cost function is minimised.
+
+**Why do ensembles typically have higher scores than individual models?**
+
+An ensemble is the combination of multiple models to create a single prediction. The key idea for making better predictions is that the models should make different errors. That way the errors of one model will be compensated by the right guesses of the other models and thus the score of the ensemble will be higher.&#x20;
+
+We need diverse models for creating an ensemble. Diversity can be achieved by:&#x20;
+
+1. Using different ML algorithms. For example, you can combine logistic regression, k-nearest neighbors, and decision trees.&#x20;
+2. Using different subsets of the data for training. This is called bagging.&#x20;
+3. Giving a different weight to each of the samples of the training set. If this is done iteratively, weighting the samples according to the errors of the ensemble, it’s called boosting. Many winning solutions to data science competitions are ensembles. However, in real-life machine learning projects, engineers need to find a balance between execution time and accuracy.&#x20;
+
+**What is an imbalanced dataset? Can you list some ways to deal with it?**
+
+An imbalanced dataset is one that has different proportions of target categories. For example, a dataset with medical images where we have to detect some illness will typically have many more negative samples than positive samples—say, 98% of images are without the illness and 2% of images are with the illness.
+
+There are different options to deal with imbalanced datasets
+
+* Oversampling or undersampling. Instead of sampling with a uniform distribution from the training dataset, we can use other distributions so the model sees a more balanced dataset.
+* Data augmentation. We can add data in the less frequent categories by modifying existing data in a controlled way. In the example dataset, we could flip the images with illnesses, or add noise to copies of the images in such a way that the illness remains visible.
+* Using appropriate metrics. In the example dataset, if we had a model that always made negative predictions, it would achieve a precision of 98%. There are other metrics such as precision, recall, and F-score that describe the accuracy of the model better when using an imbalanced dataset.
+
+**Precision, Recall, and F1-score**
+
+Precision (also called positive predictive value) is the fraction of relevant instances among the retrieved instances Precision = true positive / (true positive + false positive)
+
+Recall (also known as sensitivity) is the fraction of relevant instances that have been retrieved over the total amount of relevant instances. Recall = true positive / (true positive + false negative)
+
+It is the weighted average of precision and recall. It considers both false positives and false negatives into account. It is used to measure the model’s performance.
+
+F1-Score = 2 \* (precision \* recall) / (precision + recall)
+
+**What’s the difference between Type I and Type II errors?**
+
+Type I error is a false positive, while Type II error is a false negative. Briefly stated, a Type I error means claiming something has happened when it hasn’t, while a Type II error means that you claim nothing is happening when in fact something is. A clever way to think about this is to think of Type I error as telling a man he is pregnant, while Type II error means you tell a pregnant woman she isn’t carrying a baby.
+
+**What's the difference between boosting and bagging?**
+
+Boosting and bagging are similar, in that they are both ensemble techniques, where a number of weak learners (classifiers/regressors that are barely better than guessing) combine (through averaging or max vote) to create a strong learner that can make accurate predictions. Bagging means that you take bootstrap samples (with replacement) of your data set and each sample trains a (potentially) weak learner. Boosting, on the other hand, uses all data to train each learner, but instances that were misclassified by the previous learners are given more weight so that subsequent learners give more focus to them during training.
+
+**Explain Correlation and Covariance?**
+
+Correlation is used for measuring and also for estimating the quantitative relationship between two variables. Correlation measures how strongly two variables are related. Examples like income and expenditure, demand and supply, etc.&#x20;
+
+Covariance is a simple way to measure the correlation between two variables. The problem with covariance is that they are hard to compare without normalization.
+
+**Can logistic regression be used for more than 2 classes?**
+
+Yes, using one vs rest method.&#x20;
+
+**How do you check the Normality of a dataset?**
+
+Visually, we can use plots. A few of the normality checks are as follows:&#x20;
+
+1. Shapiro-Wilk Test&#x20;
+2. Anderson-Darling Test&#x20;
+3. Martinez-Iglewicz Test
+4. Kolmogorov-Smirnov Test&#x20;
+5. D’Agostino Skewness Test
+
+**How to Handle Outlier Values?**
+
+An Outlier is an observation in the dataset that is far away from other observations in the dataset. Tools used to discover outliers are:
+
+* Box plot&#x20;
+* Z-score&#x20;
+* Scatter plot, etc.&#x20;
+
+Typically, we need to follow three simple strategies to handle outliers:&#x20;
+
+* We can drop them.
+* We can mark them as outliers and include them as a feature.&#x20;
+* Likewise, we can transform the feature to reduce the effect of the outlier.
+
+**What is Cross-Validation?**
+
+Cross-validation is a method of splitting all your data into three parts: training, testing, and validation data. Data is split into k subsets, and the model has trained on k-1of those datasets. The last subset is held for testing. This is done for each of the subsets. This is k-fold cross-validation. Finally, the scores from all the k-folds are averaged to produce the final score.
+
+**What are Support Vectors in SVM?**
+
+A Support Vector Machine (SVM) is an algorithm that tries to fit a line (or plane or hyperplane) between the different classes that maximizes the distance from the line to the points of the classes. In this way, it tries to find a robust separation between the classes. The Support Vectors are the points of the edge of the dividing hyperplane as in the below figure.
+
+**What are Different Kernels in SVM?**&#x20;
+
+There are six types of kernels in SVM:
+
+* Linear kernel - used when data is linearly separable.&#x20;
+* Polynomial kernel - When you have discrete data that has no natural notion of smoothness.&#x20;
+* Radial basis kernel - Create a decision boundary able to do a much better job of separating two classes than the linear kernel.&#x20;
+* Sigmoid kernel - used as an activation function for neural networks.
+
+**What is ‘Naive’ in a Naive Bayes?**&#x20;
+
+The Naive Bayes method is a supervised learning algorithm, it is naive since it makes assumptions by applying Bayes’ theorem that all attributes are independent of each other.
+
+Bayes’ theorem states the following relationship, given class variable y and dependent vector x1  through xn:
+
+P(yi | x1,..., xn) =P(yi)P(x1,..., xn | yi)(P(x1,..., xn)
+
+**When to use a Label Encoding vs. One Hot Encoding?**
+
+
+
+#### Cluster Analysis<br>
+
+1\. Cluster analysis does not classify variables as dependent or independent. - True,
+
+2\. Cluster analysis is the obverse of factor analysis in that it reduces the number of objects, not the number of variables, by grouping them into a much smaller number of clusters. (True,
+
+3\. If cluster analysis is used as a general data reduction tool, subsequent multivariate analysis can be conducted on the clusters rather than on the individual observations.(True
+
+4\. The dendrogram is read from right to left. (False,
+
+5\. Clustering should be done on samples of 300 or more. False,
+
+6\. In cluster analysis, objects with larger distances between them are more similar to each other than are those at smaller distances. (False,
+
+7\. The average linkage method of hierarchical clustering is preferred to the single and complete linkage methods.(True,
+
+8\. The centroid method is a variance method of hierarchical clustering in which the distance between two clusters is the distance between their centroids (means for all the variables). (True,
+
+9\. Nonhierarchical clustering is faster than hierarchical methods. (True,
+
+10\. It is helpful to profile the clusters in terms of variables that were not used for clustering. (True,
+
+11\. One method of assessing the reliability and validity of clustering is to use different methods of clustering and compare the results.(True,
+
+12\. To reduce the number of variables, a large set of variables can often be replaced by the set of cluster components. (True,
+
+13\. Which method of analysis does not classify variables as dependent or independent?
+
+a. regression analysis b. discriminant analysis c. analysis of variance **d. cluster analysis**
+
+**Q. How big should your batch size be? How do you choose it?**
+
+There are reasons to use both larger and smaller batch sizes and you need to find the right \*balance\* for your dataset.
+
+Why use larger batch sizes?&#x20;
+
+Computing the gradients on more data leads to less noise that can be caused by outliers.&#x20;
+
+Increase training speed, by avoiding the optimization jumping in different directions. Reduce oscillation of the loss function.
+
+Why use \*smaller\* batch sizes?&#x20;
+
+Your training data likely doesn't sample the problem space perfectly. You actually want some noise to avoid overfitting.&#x20;
+
+Smaller batches act as a regularization mechanism.&#x20;
+
+You can't fit all the data in the GPU memory.
+
+**Q. What is the problem with unbalanced datasets? Can you give an example? How do you deal with it?**&#x20;
+
+Real-world datasets are often imbalanced - some of the classes appear much more often in your data than others. The problem? Your ML model will likely learn to only predict the dominant classes.&#x20;
+
+Example:&#x20;
+
+We will be dealing with a ML model to detect traffic lights for a self-driving car. Traffic lights are small so you will have many more parts of the image that are not traffic lights. Furthermore, yellow lights are much rarer than green or red.
+
+The problem is, Imagine we train a model to classify the color of the traffic light. A typical distribution will be:&#x20;
+
+red- 56%&#x20;
+
+yellow- 3%&#x20;
+
+green- 41%&#x20;
+
+So, your model can get to 97% accuracy just by learning to distinguish red from green. How can we deal with this?
+
+Evaluation measures:  First, you need to start using a different evaluation measure other than the accuracy:&#x20;
+
+\- Precision per class&#x20;
+
+\- Recall per class -
+
+\- F1 score per class&#x20;
+
+I also like to look at the confusion matrix to get an overview. Always look at examples from the data as well!
+
+In the traffic lights example above, we will see a very poor recall for yellow(most real examples were not recognized), while precision will likely be high. At the same time, the precision of green and red will be lower (yellow will be classified as green or red). The best thing you can do is to collect more data of the underrepresented classes. This may be hard or even impossible…
+
+Balance your data: The idea is to resample your dataset so it is better balanced.
+
+Undersampling - throw away some examples of the dominant classes, Even better, you can use some unsupervised clustering method and throw out only samples from the big clusters. The problem of course is that you are throwing out valuable data.
+
+Oversampling - This is more difficult. You can just repeat the sample, but it won't work very well. You can use methods like SMOTE (Synthetic Minority Oversampling Technique) to generate new samples interpolating between existing ones. This may not be easy for complex images. If you are dealing with images, you can use data augmentation techniques to create new samples by modifying the existing ones (rotation, flipping, skewing, color filters...) You can also use GANs or simulations the synthesize completely new images.
+
+Adapting your loss: Another strategy is to modify your loss function to penalize misclassification of the underrepresented classes more than the dominant ones. For the above example, we can set them like this(proportionally  to the distribution)
+
+&#x20; Red    1.8
+
+Yellow 33.3
+
+Green  2.4
+
+**Q9. 𝘞𝘩𝘢𝘵 𝘪𝘴 𝘵𝘩𝘦 𝘱-𝘷𝘢𝘭𝘶𝘦 and 𝘏𝘰𝘸 𝘸𝘰𝘶𝘭𝘥 𝘺𝘰𝘶 𝘦𝘹𝘱𝘭𝘢𝘪𝘯 𝘵𝘩𝘦 𝘱-𝘷𝘢𝘭𝘶𝘦 𝘵𝘰 𝘢 𝘯𝘰𝘯-𝘵𝘦𝘤𝘩𝘯𝘪𝘤𝘢𝘭 𝘴𝘵𝘢𝘬𝘦𝘩𝘰𝘭𝘥𝘦𝘳?**
+
+The p-value is the probability of the observed statistic or more extreme given that the null hypothesis. And In statistics, you are looking for evidence that the null hypothesis, your baseline assumption, may not be valid. P-value is the probability of getting the observed value or more extreme given that the baseline model is assumed to be true. So, suppose that the baseline model is that the mean is 6’3’’ as the average height for basketball players. If you observe a value that’s 5’2’’, it’s in the extreme which is suggestive that the baseline model may not be correct.
+
+**Q. 𝘈𝘯 𝘦𝘹𝘱𝘦𝘳𝘪𝘮𝘦𝘯𝘵 𝘴𝘩𝘰𝘸𝘦𝘥 𝘵𝘩𝘢𝘵 𝘢 𝘯𝘦𝘸 𝘷𝘦𝘳𝘴𝘪𝘰𝘯 𝘰𝘧 𝘢𝘯 𝘦𝘮𝘢𝘪𝘭 𝘤𝘢𝘮𝘱𝘢𝘪𝘨𝘯 𝘱𝘳𝘰𝘥𝘶𝘤𝘦𝘥 𝘢 𝘭𝘪𝘧𝘵 𝘪𝘯 𝘵𝘩𝘦 𝘶𝘴𝘦𝘳 𝘤𝘰𝘯𝘷𝘦𝘳𝘴𝘪𝘰𝘯. 𝘖𝘯𝘤𝘦 𝘵𝘩𝘦 𝘤𝘢𝘮𝘱𝘢𝘪𝘨𝘯 𝘸𝘢𝘴 𝘭𝘢𝘶𝘯𝘤𝘩𝘦𝘥 𝘰𝘯 100% 𝘰𝘧 𝘵𝘩𝘦 𝘶𝘴𝘦𝘳𝘴, 𝘵𝘩𝘦 𝘭𝘪𝘧𝘵 𝘴𝘩𝘪𝘧𝘵𝘦𝘥 𝘪𝘯 𝘵𝘩𝘦 𝘯𝘦𝘨𝘢𝘵𝘪𝘷𝘦 𝘥𝘪𝘳𝘦𝘤𝘵𝘪𝘰𝘯. 𝘞𝘩𝘺?**
+
+To approach this question, the first thing to do is frame the question with clarifying questions. For instance, was the experimentation run on a subset of the population or slice in time that did not generalize well to the rest of the population?&#x20;
+
+If the experimentation ran only in the U.S., then rolled out globally, what worked in the U.S. may not generalize well to other markets given cultural and language differences. Hence, the overall lift could shift in the direction. This is classic Simpson’s Paradox.
+
+The other aspect is the timing of the campaign. Perhaps, the experimentation ran during a holiday that encourages spendings. But, post-launch could be a non-holiday period which could be different conditions for users. Once you call out a potential hypothesis to the interviewer, the next step is to briefly summarize how you would investigate the analysis and provide a recommendation.
+
+You can say something along the lines of, “I will pull conversion data by GEO and look to see how the directions might differ at the global, continental, and country levels. The shift in the conversions will suggest that the treatment effects have different implications from one region to another. Therefore, this is suggestive that perhaps a different marketing strategy should be applied. Or, we should roll back the marketing campaign to only the subset of the regions like the U.S. that has been performing well.”
+
+**What is Clustering?**
+
+Clustering is the process of grouping a set of objects into a number of groups. Objects should be similar to one another within the same cluster and dissimilar to those in other clusters. A few types of clustering are:&#x20;
+
+1. Hierarchical clustering&#x20;
+2. K means clustering&#x20;
+3. Density-based clustering&#x20;
+4. Fuzzy clustering, etc.
+
+**How can you select K for K-means Clustering?**
+
+There are two kinds of methods that include direct methods and statistical testing methods:&#x20;
+
+* Direct methods: It contains elbow and silhouette&#x20;
+* Statistical testing methods: It has gap statistics.&#x20;
+
+The silhouette is the most frequently used while determining the optimal value of k.
+
 
 
