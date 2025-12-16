@@ -152,11 +152,15 @@ class RidgeRegression:
 
 L1 shrinks some weights to zero which can be helpful in feature selection.
 
+Lasso regression is a linear model with L1 regularization that adds an absolute-value penalty on coefficients, leading to sparse solutions and automatic feature selection. It trades increased bias for reduced variance, improves interpretability, but struggles with correlated features and requires careful feature scaling.
+
+#### Elastic Net :&#x20;
 
 
 
 
 
+<figure><img src="../../.gitbook/assets/Gemini_Generated_Image_4dyv264dyv264dyv.png" alt=""><figcaption></figcaption></figure>
 
 **Note :-**&#x20;
 
