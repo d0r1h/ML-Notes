@@ -411,3 +411,82 @@ The silhouette is the most frequently used while determining the optimal value o
 
 
 
+#### Deep Learning&#x20;
+
+
+
+**Explain activation functions in deep learning**&#x20;
+
+1. The sigmoid function is used for binary classification. The probabilities sum needs to be 1.&#x20;
+2. The softmax function is used for multi-classification. The probabilities sum will be 1.
+3. Hyperbolic Tangent Function (Tanh)
+4. Rectified Linear Unit Function (Relu)&#x20;
+
+<figure><img src="../.gitbook/assets/unknown.png" alt=""><figcaption></figcaption></figure>
+
+
+
+**What is data normalization and why do we need it**
+
+Data normalization is a very important preprocessing step, used to rescale values to fit in a specific range to assure better convergence during backpropagation. In general, it boils down to subtracting the mean of each data point and dividing by its standard deviation. If we don't do this then some of the features (those with high magnitude) will be weighted more in the cost function (if a higher-magnitude feature changes by 1%, then that change is pretty big, but for smaller features, it's quite insignificant). The data normalization makes all features weighted equally.
+
+**Why do we use convolutions for images rather than just FC layers.**
+
+Firstly, convolutions preserve, encode, and actually use the spatial information from the image. If we used only FC layers we would have no relative spatial information. Secondly, Convolutional Neural Networks (CNNs) have a partially built-in translation in-variance, since each convolution kernel acts as its own filter/feature detector.
+
+**Why do we have max-pooling in classification CNNs?**
+
+Max-pooling in a CNN allows you to reduce computation since your feature maps are smaller after the pooling. You don't lose too much semantic information since you're taking the maximum activation. There's also a theory that max-pooling contributes a bit to giving CNN more translation in-variance.
+
+**What is the significance of Residual Networks?**
+
+The main thing that residual connections did was allow for direct feature access from previous layers. This makes information propagation throughout the network much easier. One very interesting paper about this shows how using local skip connections gives the network a type of ensemble multi-path structure, giving features multiple paths to propagate throughout the network.
+
+**What is batch normalization and why does it work?**
+
+Training Deep Neural Networks is complicated by the fact that the distribution of each layer's inputs changes during training, as the parameters of the previous layers change. The idea is then to normalize the inputs of each layer in such a way that they have a mean output activation of zero and standard deviation of one. This is done for each individual mini-batch at each layer i.e compute the mean and variance of that mini-batch alone, then normalize. This is analogous to how the inputs to networks are standardized. How does this help? We know that normalizing the inputs to a network helps it learn. But a network is just a series of layers, where the output of one layer becomes the input to the next. That means we can think of any layer in a neural network as the first layer of a smaller subsequent network. Thought of as a series of neural networks feeding into each other, we normalize the output of one layer before applying the activation function, and then feed it into the following layer (sub-network).
+
+**What is data augmentation? Can you give some examples? \[Image - Computer Vision]**&#x20;
+
+Data augmentation is a technique for synthesizing new data by modifying existing data in such a way that the target is not changed, or is changed in a known way.
+
+Computer vision is one of the fields where data augmentation is very useful. There are many modifications that we can do to images:
+
+* Resize&#x20;
+* Horizontal or vertical flip&#x20;
+* Rotate&#x20;
+* Add noise&#x20;
+* Deform&#x20;
+* Modify colors Each problem needs a customized data augmentation pipeline
+
+For NLP, we can use the back-translation technique for data augmentation.&#x20;
+
+**What is a vanishing and exploding gradient?**
+
+As we add more and more hidden layers, backpropagation becomes less and less useful in passing information to the lower layers. In effect, as information is passed back, the gradients begin to vanish and become small relative to the weights of the networks.
+
+**What are dropouts**
+
+Dropout is a simple way to prevent a neural network from overfitting. It is the dropping out of some of the units in a neural network. It is similar to the natural reproduction process, where nature produces offspring by combining distinct genes (dropping out others) rather than strengthening the co-adapting of them.
+
+Epoch vs. Batch vs. Iteration.
+
+* Epoch: one forward pass and one backward pass of all the training examples
+* Batch: examples processed together in one pass (forward and backward)
+* Iteration: number of training examples / Batch size
+
+**What are Parametric and Non-Parametric Models?**
+
+* Parametric models will have limited parameters and to predict new data, you only need to know the parameter of the model.&#x20;
+* Non-Parametric models have no limits in taking a number of parameters, allowing for more flexibility and to predict new data. You need to know the state of the data and model parameters.
+
+**What are the advantages of transfer learning?**
+
+1. Better initial model: In other methods of learning, you must create a model from scratch. Transfer learning is a better starting point because it allows us to perform tasks at a higher level without having to know the details of the starting model.&#x20;
+2. Higher learning rate: Because the problem has already been taught for a similar task, transfer learning allows for a faster learning rate during training.&#x20;
+3. Higher accuracy after training: Transfer learning allows a deep learning model to converge at a higher performance level, resulting in more accurate output, thanks to a better starting point and higher learning rate.<br>
+
+**Why would you use many small convolutional kernels such as 3x3 rather than a few large ones? \[**[**Kaggle Link**](https://www.kaggle.com/discussions/general/461216)**]**
+
+
+
