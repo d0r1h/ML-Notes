@@ -4,29 +4,28 @@ description: Understanding and exploring Practical NLP.
 
 # Natural language processing
 
-**Natural language processing(NLP)** is an area of research in computer science and artificial intelligence (AI) concerned with processing natural languages such as English or Mandarin. This processing generally involves translating natural language into data (numbers) that a computer can use to learn about the world. And this understanding of the world is sometimes used to generate natural language text that reflects that understanding.
+**Natural language processing(NLP)** is an area of research in computer science and artificial intelligence (AI) concerned with processing natural languages such as English or Hindi. This processing generally involves translating natural language into data (numbers) that a computer can use to learn about the world.&#x20;
 
-A natural language processing system is often referred to as a **pipeline** because it usually involves several stages of processing where natural language flows in one end and the processed output flows out the other.
+There are different task to be done in NLP and some of them are following :&#x20;
 
-So before going to techniques of NLP, we shall take a look at different application and task that we can perform using NLP.
+* Question Answering | Paraphrase | Summarization | Dialog
+* Information Extraction (IE) | Sentiment Analysis | Parsing
+* Machine Translation(MT) -- Fully Automatic, Helping Human Translator
+* Spam detection | Pos Tagging | Named Entity recognition(NER)
 
+**There are two approaches for NLP :-**&#x20;
 
+1. Rule based system (Uni-gram, bigram, N-gram models)
+2. Neural Based system  (RNN, LSTM, Transformer)&#x20;
 
+These days mostly we work on the 2nd one and we'll focus on that only.&#x20;
 
+**Language Modeling**
 
-Dividing the  different task of NLP based on the complexity level.&#x20;
+In NLP Language Modeling is the task of predicting what word comes next. Or say, given a sequence of words x(1), x(2) … x(t) it computes the probability of occurrence of the next word x(t+1).  Where x(t+1) can be any word in the vocabulary.  Ex.  the student opened their \_\_\_
 
-####
+Examples in daily life—
 
-####
-
-#### List of few free courses on NLP by Top University
-
-| Title and Source                                            | Link                                                                                |
-| ----------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| NLP with Deep Learning(CS224N) 2019 **Stanford**            | [YouTube](https://www.youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z) |
-| CMU Neural Nets for NLP 2021 **Carnegie Mellon University** | [YouTube](https://www.youtube.com/playlist?list=PL8PYTP1V4I8AkaHEJ7lOOrlex-pcxS-XV) |
-| Speech and Language Processing **Stanford**                 | [Website](https://web.stanford.edu/\~jurafsky/slp3/)                                |
-| A Code-First Introduction to Natural Language Processing    | [fast.ai](https://www.fast.ai/2019/07/08/fastai-nlp/)                               |
-| NLP - Krish Naik                                            | [YouTube](https://www.youtube.com/playlist?list=PLZoTAELRMXVMdJ5sqbCK2LiM0HhQVWNzm) |
+* Next word popup in typing keyboard on mobile devices
+* Suggesting/completing query on google search engine
 
