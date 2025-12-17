@@ -497,7 +497,91 @@ Parametric tests are the test in which the distribution of the sample is known. 
 
 * Wilcoxon Signed Rank Test
   * One Sample test : Wilcoxon signed rank test is used to compare the median (M) of a sample to a specific value ( M0). This test is a non-parametric alternative to the one- sample t-test which is used to compare the mean of population with a specific value. To perform the test, arrange the sample into ascending order and calculate the difference between the sample point and M0. Rank the absolute value of differences using the integers starting from 1 giving the average of ranks to the tied difference.
-  *
+  * Two Sample Paired test : Wilcoxon signed rank test can be used to compare medians of paired data. This test is a non-parametric alternative to the paired t-test. Let us consider variables X and Y. The median of the difference between the two paired samples is denoted by Md. Where the difference between two samples is given as, di = xi − yi.
+* Wilcoxon Rank Sum Test : This test is used to compare the medians of unpaired data.
+* Mann-Whitney U test : It is a non-parametric test that compares the distributions of independent populations. This test can be used as a non-parametric alternative for the unpaired t-test.
+
+#### Anova
+
+ANOVA(Analysis of Variance) is a hypothesis testing technique that tests the equality of two or more population means by examining the variances of samples that are taken.ANOVA tests the general rather than specific differences among means. &#x20;
+
+Anova is a parametric test and used when there are more than 2 samples.
+
+**Assumptions of ANOVA**
+
+1. All populations involved follow a normal distribution
+2. All populations have the same variance
+3. The samples are randomly selected and independent of one another
+
+* **One-way Anova**
+
+It is used to check the equality of population means for more than two independent samples. Each group is considered as a treatment. It assumes that the samples are taken from normally distributed populations. To check this assumption we can use the Shapiro-Wilk Test. Also, the population variances should be equal; this can be tested using the Levene's Test.
+
+* State the Null and alternative Hypothesis
+
+&#x20;                                     𝐻0: 𝜇1 = 𝜇2  = 𝜇3    |.     𝐻𝐴: At least one 𝜇 differs
+
+* Decide the significance level : If its not given take alpha = 0.05
+* Identity the test statistic : Analysis of variance can determine whether the means of three or more groups are different. ANOVA uses F-tests to statistically test the equality of mean
+* Calculate F, a test statistic or P value or formulate a Anova table using statsmodels
+
+F\_critical\_value = stats.f.ppf(q = 1-0.05, dfn = 2, dfd = 60)  or
+
+np.abs(round(stats.f.isf(q = 0.05, dfn = 4, dfd = 995), 4))
+
+q = confidence interval (1-alpha) dfn = dfd =&#x20;
+
+f\_test, p\_val = stats.f\_oneway(gr\_A, gr\_B, gr\_C...)
+
+p\_value = 1 -stats.f.cdf(0.497075, dfn = 2, dfd = 60)
+
+import statsmodels.api  as   sm
+
+from   statsmodels.formula.api import ols
+
+mod = ols('Monthly\_inc \~ Gym', data = monthly\_inc\_df).fit()
+
+aov\_table = sm.stats.anova\_lm(mod, typ=2)    returns F
+
+\~ separates the left hand side of the model from the right hand side
+
+* Decide to accept or reject Null hypothesis&#x20;
+
+If calculated F/f\_test > F\_critical then, reject Null Hypothesis
+
+**Post-hoc Analysis**
+
+If one way ANOVA rejects the null hypothesis; we conclude that at least one treatment has a different mean. The test does not distinguish a treatment with the different average value. The post-hoc test or multi comparison test is used to identify such treatment(s).
+
+The Tukey's HSD test calculates the mean difference for each pair of treatments and returns the pair(s) with different averages.&#x20;
+
+comp = mc.MultiComparison(data = df\['strength'], groups = df\['machine'])
+
+post\_hoc = comp.tukeyhsd()
+
+post\_hoc.summary()
+
+The reject=False for pairs (x, y) and (x, y) denotes that we fail to reject the null hypothesis. &#x20;
+
+The values in the columns lower and upper represent the lower and upper bound of the 95% confidence interval for the mean difference.
+
+**Equivalent Non-Parametric Test**
+
+If one of the assumptions of one-way ANOVA is not satisfied, then we can perform the \`Kruskal-Wallis H test\` which is a non-parametric equivalent test for one-way ANOVA. Perform Shapiro test and if p\_value is less than alpha then it does not satisfy the assumption of normality for ANOVA, so there we can use Kruskal-Wallis H test.
+
+chi2\_val = np.abs(round(stats.chi2.isf(q = 0.05, df = 2), 4))   df = No of sample-1
+
+test\_stat, p\_val = stats.kruskal(grp1, grp2, grp2)
+
+If Test statistic > chi2\_val reject Null hypothesis and perform post-hoc analysis. Use the conover\_test  for post-hoc analysis.
+
+scikit\_posthocs.posthoc\_conover(a = data, val\_col = X, group\_col = Y)&#x20;
+
+X = column with numeric data, Y  = column with categorical data
+
+* **Two-way Anova**
+
+
 
 
 
