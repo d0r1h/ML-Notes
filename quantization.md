@@ -20,6 +20,9 @@
 18. [A Guide to Quantization in LLMs | ](https://symbl.ai/developers/blog/a-guide-to-quantization-in-llms/)[Symbl.ai](http://symbl.ai)
 19. L[LM quantization | LLM Inference Handbook](https://bentoml.com/llm/getting-started/llm-quantization)
 20. [A Comprehensive Study on Quantization Techniques for Large Language Models](https://arxiv.org/html/2411.02530v1)    &#x20;
+21. [https://fireworks.ai/blog/fireworks-quantization](https://fireworks.ai/blog/fireworks-quantization)
+22. [https://huggingface.co/blog/merve/quantization](https://huggingface.co/blog/merve/quantization)&#x20;
+23.
 
 
 

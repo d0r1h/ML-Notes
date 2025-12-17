@@ -12,7 +12,11 @@ AI Language Model (LLM) Agents are advanced machine learning models that have be
 
 
 
+Resources for understanding LLM from scratch :-&#x20;
 
+1. [Neural Networks: Zero to Hero - YouTube](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)  \[Andrej Karpathy]&#x20;
+2. [Building LLMs from scratch - YouTube](https://www.youtube.com/playlist?list=PLPTV0NXA_ZSgsLAr8YCgCwhPIJNNtexWu)&#x20;
+3. [LLM from Scratch Tutorial – Code & Train Qwen 3](https://www.youtube.com/watch?v=Jaj_SQsF-BI\&list=LL\&index=1\&pp=gAQBiAQB)&#x20;
 
 
 
