@@ -58,7 +58,7 @@ A database schema is a blueprint that represents the logical view of the databas
 
 DataBase schema is a blueprint that represents the logical view of the database., defines tables and relationships between them.
 
-<figure><img src=".gitbook/assets/unknown.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/unknown (1).jpeg" alt=""><figcaption></figcaption></figure>
 
 Structured Query Language(SQL) as we all know is the database language by the use of which we can perform certain operations on the existing database and also we can use this language to create a database.
 

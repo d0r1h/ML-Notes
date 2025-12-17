@@ -19,11 +19,8 @@ Identifying the type of variable we are working with is always the first step of
 
 1. **Numerical (Quantitative)**
    1. Continuous : A random variable which takes continuous values, i.e. values within a range, usually measured, such as height
-
-*
-  1. Discrete : Values from the set of whole numbers only. It can take countably finite values, can’t have decimal values. (Age, No of bathroom)
-
-1.  **Categorical (Qualitative)**
+   2. Discrete : Values from the set of whole numbers only. It can take countably finite values, can’t have decimal values. (Age, No of bathroom)
+2.  **Categorical (Qualitative)**
 
     1. Ordinal : Values that have inherent ordering levels, such as (high, medium, low)
     2. Nominal : Nominal data has no order. The values represent discrete units and are used to label variables (male or female), ID number, zip code
@@ -32,9 +29,7 @@ Identifying the type of variable we are working with is always the first step of
 
 ### **Measures of Central Tendency**
 
-* Mean
-
-&#x20;Mean is average of data, and it includes all values in the data, thus it can be affected by the outliers and presence of outliers can give unreliable results.
+* Mean ->  Mean is average of data, and it includes all values in the data, thus it can be affected by the outliers and presence of outliers can give unreliable results.
 
 ```
 dataset.mean()
@@ -449,3 +444,104 @@ The confidence interval for the population mean with 100(1-alpha)% confidence le
 &#x20;p = sample proportion (number of success / sample size) 𝛼 = Level of significance n = sample size
 
 ![](../.gitbook/assets/15.png)
+
+### Hypothesis Testing
+
+It is the process of evaluating the validity of the claim made using the sample data obtained from the population. A statistical test is a rule used to decide the acceptance or rejection of the claim.&#x20;
+
+* Null Hypothesis : The Null hypothesis is the claim suggesting ‘no difference’. It is denoted as H0
+* Alternative Hypothesis: It is a hypothesis that is tested against the null hypothesis. The acceptance or rejection of the hypothesis is based on the likelihood of being true H0 . It is denoted by Ha or H.
+
+**Type of Test:**
+
+The hypothesis test is used to validate the claim given by the null hypothesis. The types of tests are based on the nature of the alternative hypothesis.
+
+* **Two tailed test**:  It considers the value of population parameter is less than or greater than(i.e. Not equal) a specific value. If we test the population mean ( 𝜇) with a specific value ( 𝜇0). The null hypothesis is: 𝐻0 : 𝜇 = 𝜇0. The alternative hypothesis for the two tailed test is given as: 𝐻1 : 𝜇 ≠ 𝜇0
+* **One tailed test:** One tailed test considers the value of the population parameter is less than or greater than (but not both) a specific value.
+  *   If we test the population mean (𝜇) with a specific value (𝜇0) the null hypothesis is: 𝐻0 :𝜇 ≤ 𝜇0 and the alternative hypothesis is 𝐻1 :𝜇 > 𝜇0, the one tailed test is also known as a r**ight-tailed test.**
+
+      If we test the population mean (𝜇) with a specific value (𝜇0 ) the null hypothesis is: 𝐻0 : 𝜇 ≥ 𝜇0 and the alternative hypothesis is 𝐻1 :𝜇< 𝜇0, the one tailed test is also known as a **left-tailed test.**
+
+**Error and Power of Hypothesis**&#x20;
+
+The error can occur while choosing the correct hypothesis based on the statistical tests.&#x20;
+
+* Type I : This kind of error occurs when we reject the null hypothesis even if it is true. It is equivalent to a false positive conclusion. The probability of type I error is given by the value of 𝛼, level of significance.
+* Type II : This kind of error occurs when we fail to reject the null hypothesis even if it is wrong. It is equivalent to a false negative conclusion. The probability of type II error is given by the value of 𝛽.&#x20;
+
+The probability of correctly rejecting a false null hypothesis is defined as the Power of a test. It is calculated as 1-β.
+
+**Large Sample Test**
+
+If the sample size is sufficiently large (usually, n > 30) then we use the Z-test. If population standard deviation (σ) is unknown, then the sample standard deviation (s) is used to calculate the test statistic.
+
+* One Sample Z test
+* Two Sample Z test
+
+**Small Sample Test**
+
+If the sample size is small (usually, n < 30) then we use the t-test. These tests are also known as exact tests.
+
+* One Sample t test
+* Two Sample t test(unpaired)
+* Paired t test
+
+**Z Proportion test**
+
+* One Sample test : Perform one sample Z test for the population proportion. We compare the population proportion ( P) with a specific value ( P0).
+* Two Sample test : Perform two sample Z-test for the population proportion. We check the equality of population proportion P1 and P2.
+
+#### Non-parametric tests
+
+Parametric tests are the test in which the distribution of the sample is known. The non- parametric tests can be used when the assumptions of parametric tests are not satisfied. Non-parametric tests do not require any assumptions about the distribution of the population from which the sample is taken. These tests can be applied to the ordinal/ nominal data. A non-parametric test can be performed on the data containing outliers. The observations in the sample are assumed to be independent for a non-parametric test.
+
+* Wilcoxon Signed Rank Test
+  * One Sample test : Wilcoxon signed rank test is used to compare the median (M) of a sample to a specific value ( M0). This test is a non-parametric alternative to the one- sample t-test which is used to compare the mean of population with a specific value. To perform the test, arrange the sample into ascending order and calculate the difference between the sample point and M0. Rank the absolute value of differences using the integers starting from 1 giving the average of ranks to the tied difference.
+  *
+
+
+
+<figure><img src="../.gitbook/assets/unknown.jpeg" alt=""><figcaption></figcaption></figure>
+
+
+
+**Approach(Almost) any Statistic problem in Hypothesis testing (using python)**
+
+Check if it is a one-tailed test  (left/right) or two tailed test
+
+1. One tailed test
+2.  Two tailed Test
+
+    1. **If dataset or list is give(sample)** -> First check for the data distribution or normality of the data. if data is normally distributed then use Parametric test else use Non-parameter test. It can be done using the Shapiro-Wilk test. shapiro() returns a tuple having the values of test statistics and the corresponding p-value.  `stat, p_value = shapiro(dataset)`  If p-value >  0.05, thus we can say that the data is normally distributed. Calculate z critical value. Calculate z-score & p value using following formula of ztest() `z_score, pval = stats.ztest(x1 = dataset, value = mu(𝜇), alternative = 'smaller')`  OR calculate confidence interval  `stats.norm.interval(0.95, loc = np.mean(dataset), scale = statistics.stdev(dataset) / np.sqrt(len(dataset))))`
+    2.  Not given (just numbers are given) ->  Extract following information from the question phrase -- population\_mean, population\_sd, sample\_mean, sample\_size, and alpha(significance level).&#x20;
+
+        Calculate the Z critical value and Z score(or test statistic), and if z\_score is less than negative z\_critical or greater than z\_critical then reject the Null hypothesis.
+
+
+
+```py
+z_critical = np.abs(round(stats.norm.isf(q = alpha/2), 2))
+def z_test(population_mean, population_sd, sample_mean, sample_size):
+     z_score = (sample_mean - population_mean )/ (population_sd/np.sqrt(sample_size))		
+     return z_score
+```
+
+Calculate P value and if p\_value is less than alpha then reject Null Hypothesis.
+
+`p_value = stats.norm.cdf()  # use 'cdf()' to calculate P(Z <= z_score)`
+
+`print(p_value*2)  # for a two-tailed test multiply the p-value by 2`
+
+Calculate confidence Interval and if population\_mean does not lie between that CI then reject Null Hypothesis.&#x20;
+
+`stats.norm.interval(0.99, loc = sample_mean, scale = population_std / np.sqrt(n)))`
+
+#### P Value&#x20;
+
+P-values are used to make a decision about a hypothesis test. P-value is the minimum significant level at which you can reject the null hypothesis. The lower the p-value, the more likely you reject the null hypothesis.
+
+* Null Hypothesis : The Null hypothesis is the claim suggesting ‘no difference’. It is denoted as H0&#x20;
+* Alternative Hypothesis: It is a hypothesis that is tested against the null hypothesis. The acceptance or rejection of the hypothesis is based on the likelihood of being true H0 . It is denoted by Ha or H.
+
+
+

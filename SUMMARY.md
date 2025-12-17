@@ -46,7 +46,7 @@
   * [ETA Prediction for Deliveries/Rides](ml-design/eta-prediction-for-deliveries-rides.md)
 * [Vector Database](vector-database/README.md)
   * [RAG System](vector-database/rag-system.md)
-* [Diffusion](diffusion/README.md)
+* [Diffusion](diffusion.md)
   * [GAN](diffusion/gan.md)
 * [Reinforcement Learning](reinforcement-learning.md)
 * [Cuda and Kernels](cuda-and-kernels.md)
