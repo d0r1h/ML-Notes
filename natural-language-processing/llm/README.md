@@ -22,10 +22,12 @@ AI Language Model (LLM) Agents are advanced machine learning models that have be
 
 1. [Neural Networks: Zero to Hero - YouTube](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)  \[Andrej Karpathy]&#x20;
 2. [Building LLMs from scratch - YouTube](https://www.youtube.com/playlist?list=PLPTV0NXA_ZSgsLAr8YCgCwhPIJNNtexWu)&#x20;
-3. [LLM from Scratch Tutorial – Code & Train Qwen 3](https://www.youtube.com/watch?v=Jaj_SQsF-BI\&list=LL\&index=1\&pp=gAQBiAQB)&#x20;
-4. [https://www.youtube.com/watch?v=UU1WVnMk4E8](https://www.youtube.com/watch?v=UU1WVnMk4E8)&#x20;
-5. [LLMs: Understanding Temperature and Context Length of a GPT](https://www.youtube.com/watch?v=IllijoYSH80)
-6. [https://www.youtube.com/watch?v=lrWY4O5kUTY\&list=LL\&index=30\&pp=gAQBiAQBsAgC](https://www.youtube.com/watch?v=lrWY4O5kUTY\&list=LL\&index=30\&pp=gAQBiAQBsAgC)&#x20;
+3. [Build DeepSeek from Scratch](https://www.youtube.com/playlist?list=PLPTV0NXA_ZSiOpKKlHCyOq9lnp-dLvlms)
+4. [https://www.youtube.com/playlist?list=PLPTV0NXA\_ZSiOpKKlHCyOq9lnp-dLvlms](https://www.youtube.com/playlist?list=PLPTV0NXA_ZSiOpKKlHCyOq9lnp-dLvlms)
+5. [LLM from Scratch Tutorial – Code & Train Qwen 3](https://www.youtube.com/watch?v=Jaj_SQsF-BI\&list=LL\&index=1\&pp=gAQBiAQB)&#x20;
+6. [https://www.youtube.com/watch?v=UU1WVnMk4E8](https://www.youtube.com/watch?v=UU1WVnMk4E8)&#x20;
+7. [LLMs: Understanding Temperature and Context Length of a GPT](https://www.youtube.com/watch?v=IllijoYSH80)
+8. [https://www.youtube.com/watch?v=lrWY4O5kUTY\&list=LL\&index=30\&pp=gAQBiAQBsAgC](https://www.youtube.com/watch?v=lrWY4O5kUTY\&list=LL\&index=30\&pp=gAQBiAQBsAgC)&#x20;
 
 
 

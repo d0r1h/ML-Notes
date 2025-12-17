@@ -22,7 +22,7 @@
 20. [A Comprehensive Study on Quantization Techniques for Large Language Models](https://arxiv.org/html/2411.02530v1)    &#x20;
 21. [https://fireworks.ai/blog/fireworks-quantization](https://fireworks.ai/blog/fireworks-quantization)
 22. [https://huggingface.co/blog/merve/quantization](https://huggingface.co/blog/merve/quantization)&#x20;
-23.
+23. [https://www.datacamp.com/tutorial/quantization-for-large-language-models](https://www.datacamp.com/tutorial/quantization-for-large-language-models)&#x20;
 
 
 
