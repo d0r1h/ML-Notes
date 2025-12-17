@@ -442,50 +442,6 @@ Information Gain: It is the decrease in entropy at a node. To construct the deci
 
 After the split of data, the purity of data will be higher as a result the entropy will always be lower. Thus, the information gain is always positive.
 
-## Decision Trees
-
-Decision tree is a classifier that results in flowchart-like structure with nodes and edges.  Branch/sub-tree: a subsection of the entire decision tree. Root Node: no incoming edge and zero or more outgoing edges. Internal Node: exactly one incoming edge and zero or more outgoing edges. Leaf/Terminal Node: exactly one incoming edge and no outgoing edge.
-
-A decision tree is built from top to bottom. That is we begin with the root node, While constructing a decision tree we try to achieve pure nodes. A node is considered to be pure when all the data points belong to the same class. This purity of nodes is determined using the entropy value.
-
-To select the root node, from k features, select the feature with the highest information gain and split the data on this feature, at the next node, from (k-1) features, select the feature with the highest information gain and again split the data on this feature, continue the process till you exhaust all features
-
-If you need to choose between attributes with same information gain, then the first predictor found from left to right in a data set is considered, some decision tree algorithm implementations might consider each of the variables with same information gain at a time and check which model performs better. This rule applies to all parent nodes.&#x20;
-
-Decision trees are prone to overfitting, and overfitting occurs when the decision tree uses all of the data samples in the decision tree, resulting in a perfect fit. An overfitted tree may have leaf nodes that contain only one sample, ie. singleton node and overfitted tree are generally complicated and long decision chains. An overfitted tree has low training error and a high generalization error, hence can not be generalized for new data.&#x20;
-
-An approach to handle overfitting is **pruning.** Pruning is a technique that removes the branches of a tree that provide little power to classify instances, thus reduces the size of the tree.&#x20;
-
-* Pre-Pruning: The decision tree stops growing before the tree completely grown
-* Post-Pruning: The decision tree is allowed to grow completely and then prune
-
-**Hyperparameters**: Pre-pruning can be done by specifying the following hyperparameters.
-
-* max\_depth: maximum length of the decision allowed to grow
-* min\_samples\_split: minimum samples required to split an internal node
-* max\_leaf\_nodes: maximum number of leaf nodes the decision tree can have
-* max\_feature\_size: maximum number of features to be considered to while splitting a node
-* min\_samples\_leaf: minimum samples required to be at the leaf node
-
-**Algorithms**:&#x20;
-
-* ID3 Algorithm: only categorical data
-* C4.5 Algorithm: both categorical, numeric data and missing values '?'
-* C5.0 Algorithm: Work faster and more memory efficient than C4.5
-* CART
-
-**Measures of Purity of a node**
-
-Entrop&#x79;**:**&#x20;
-
-Gini Index:&#x20;
-
-![](<../../.gitbook/assets/image (44).png>)
-
-Classification error: For samples belonging to one class, the classification error is 0 and for equally distributed samples, the classification error is 0.5
-
-![](<../../.gitbook/assets/image (45).png>)
-
 ## Ensemble Learning
 
 Ensemble learning algorithms combine multiple models into one predictive model. Decisions from several weak learners are combined to increase the model performance.&#x20;
