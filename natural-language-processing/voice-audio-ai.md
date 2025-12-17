@@ -18,7 +18,7 @@ There are two types of architecture for Voice AI agents :- <br>
 
 Core Pipeline Component for Any Chained Voice AI Agent :-&#x20;
 
-<figure><img src="../.gitbook/assets/unknown (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/unknown (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 A chained architecture processes audio sequentially, converting audio to text, generating intelligent responses using large language models (LLMs), and synthesizing audio from text. <br>
 
@@ -81,7 +81,7 @@ Processing Human speech into readable text, popular example are youtube, tiktok 
 
 The emergence of direct voice-to-voice models represents a significant architectural shift. These systems, including OpenAI’s real-time API and Hume AI’s EVI 2, bypass the traditional STT-LLM-TTS pipeline, offering potentially lower latency and more natural conversational flow.
 
-<figure><img src="../.gitbook/assets/unknown (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/unknown (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 .
 

@@ -104,7 +104,7 @@ The main difference between the standard aggregate function and the window funct
 
 At a high-level window functions can be split into following 3 categories:
 
-<figure><img src=".gitbook/assets/unknown (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/unknown (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Work as group by but no of rows is not reduced (partition by), mostly used for ranking.&#x20;
 

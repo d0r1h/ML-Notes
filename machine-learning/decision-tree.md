@@ -20,7 +20,7 @@ Decision tree is a classifier that results in flowchart-like structure with node
 
 A **leaf node** in a decision tree is the terminal node at the bottom of the tree, where no further splits are made. Leaf nodes represent the final output or prediction of the decision tree. Once a data point reaches a leaf node, a decision or prediction is made based on the majority class (for classification) or the average value (for regression) of the data points that reach that leaf.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 A decision tree is built from top to bottom. That is we begin with the root node, While constructing a decision tree we try to achieve pure nodes. A node is considered to be pure when all the data points belong to the same class. This purity of nodes is determined using the entropy value or gini index.
 
@@ -196,7 +196,7 @@ The algorithm now focuses _only_ on the data points in that Right Region. It fin
 
 
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;**Notes :-**&#x20;
 

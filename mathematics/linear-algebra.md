@@ -19,7 +19,7 @@ Linear Algebra is equal to Vectors (V) and Matrices (M) and operation on them, V
 
 * Line  -  Equation of a line in two dimensions is : `y = mx + c`&#x20;
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (1).png>)
 
 * Plane - A line in three dimensions called a plane and its equation is given by: `ax+by+cz = d`
 * Hyperplane - A hyperplane is a subspace whose dimension is one less than that of its ambient space.&#x20;
@@ -108,7 +108,7 @@ a@b
 
 Scalar Projection: A scalar projection of u onto v is the length of the shadow that u casts on v.&#x20;
 
-![](<../.gitbook/assets/image (2) (1).png>)
+![](<../.gitbook/assets/image (2) (1) (1).png>)
 
 ```
 u = np.array([6, 7])
@@ -119,7 +119,7 @@ sc_proj = np.dot(u, v) / np.linalg.norm(v)
 
 Vector Projection: A vector projection of u onto v is the vector in the same direction as v, whose length is the scalar projection of u on v. The scalar projection is the magnitude of vector projection.&#x20;
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../.gitbook/assets/image (3) (1).png>)
 
 ```
 vec_proj = (v * sc_proj)/ np.linalg.norm(v)
