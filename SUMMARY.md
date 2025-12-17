@@ -57,3 +57,4 @@
 * [SQL](sql.md)
 * [DSA (Data Structure & Algorithms)](dsa-data-structure-and-algorithms/README.md)
   * [Problems](dsa-data-structure-and-algorithms/problems.md)
+* [Resources](resources.md)

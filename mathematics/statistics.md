@@ -581,6 +581,109 @@ X = column with numeric data, Y  = column with categorical data
 
 * **Two-way Anova**
 
+Two-way ANOVA with replication since the data contains values for multiple locations. OR the two-way ANOVA can be used to test the effect due to the two nominal variables on a numeric variable.
+
+The levels of one nominal variable is considered as treatments and levels of another variable is considered as blocks
+
+* State the Null and alternative Hypothesis
+
+𝐻01: The averages of all treatments are the same. 𝐻11: At least one treatment has a different average.&#x20;
+
+𝐻02: The averages of all blocks are the same. 𝐻12: At least one block has a different average.&#x20;
+
+* Decide the significance level : take alpha = 0.05
+* Identity the test statistic : If you have two factors and three groups, then there will be two independent variables, let's say discount and location. Two-way ANOVA determines how a response (Sale Quantity) is affected by two factors, Discount and Location.
+* Calculate P value using Anova table
+
+import statsmodels.api   as   sm
+
+from   statsmodels.formula.api import ols
+
+from   statsmodels.stats.anova import anova\_lm
+
+formula = 'Qty \~ C(Discount) + C(Loc) + C(Discount):C(Loc)'
+
+model = ols(formula, Sale\_qty\_df).fit()
+
+aov\_table = anova\_lm(model, typ=2)
+
+statsmodels.formula.api.ols # creates a model from a formula and dataframe statsmodels.api.sm.stats.anova\_lm # gives an Anova table for one or more fitted linear models
+
+f\_crit = stats.f.isf(0.05, 5, 120 )
+
+* Decide to accept or reject Null hypothesis
+
+#### ChiSquare Test
+
+It is a non-parametric test. A chi-square distribution with k degrees of freedom is given by sum of squares of standard normal random variables 𝑍1, 𝑍2, ... 𝑍𝑘  obtained by transforming normal standard variables  𝑋1, 𝑋2, ... 𝑋𝑘  with mean values   𝜇1, 𝜇2, ... 𝜇𝑘 and corresponding standard deviation 𝜎1, 𝜎2, ... 𝜎𝑘.
+
+Properties of Chi Square distribution
+
+1. The mean and standard deviation of a chi-square distribution are k and √2k respectively, where k is the degrees of freedom.
+2. As the degrees of freedom increases, the pdf of a chi-square distribution approaches normal distribution.
+3. Chi-square goodness of fit is one of the popular tests for checking whether a data follows a specific probability distribution.
+4. Chi square test is a right tailed test
+
+**Chi Square Goodness of fit tests**
+
+Goodness of fit tests are hypothesis tests that are used for comparing the observed distribution of data with expected distribution of the data to decide whether there is any statistically significant difference between the observed distribution and a theoretical distribution based on the comparison of observed frequencies in the data and the expected frequencies if the data follows a specific theoretical distribution.
+
+Null Hypothesis: There is no statistically significant difference between the observed frequencies and the expected frequencies from a hypothesized distribution
+
+Alternate Hypothesis: There is statistically significant difference between the observed frequencies and the expected frequencies from a hypothesized distribution &#x20;
+
+Chi-square statistic for goodness of fit is given by: \[Formula]&#x20;
+
+This test is invalid when the observed or expected frequencies in each category are too small. A typical rule is that all of the observed and expected frequencies should be at least 5.
+
+chi2\_val = np.abs(round(stats.chi2.isf(q = 0.1, df = 5), 4))   # critical value for chi  χ2
+
+chi\_square\_stat, p\_value = stats.chisquare(observed\_values, f\_exp=expected\_values)
+
+**Chi Square test of independence**&#x20;
+
+Chi-square test of independence is a hypothesis test in which we test whether two or more groups are statistically independent or not.
+
+Null Hypothesis: Two or more groups are independent Alternate Hypothesis: Two or more groups are dependent
+
+The corresponding degrees of freedom is (r - 1) \* ( c  - 1) , where r is the number of rows and c is the number of columns in the contingency table.&#x20;
+
+scipy.stats.chi2\_contingency is the Chi-square test of independence of variables in a contingency table.
+
+quality\_array = np.array( \[ \[list1] , \[list2] ] )
+
+chi\_sq\_Stat, p\_value, deg\_freedom, exp\_freq = stats.chi2\_contingency(quality\_array)
+
+stats.chi2\_contingency(quality\_array)
+
+**Chi Square test for equality of Variance**
+
+This test is used to test whether the population variance (𝜎 2) is equal to a specific value (𝜎 2 0). Consider that the population mean (𝜇) is known.
+
+If the population mean (𝜇) is unknown, use sample mean (𝑥) instead of 𝜇 . In this case, the test statistic follows a chi-square distribution with 𝑛−1 degrees of freedom.
+
+As chi-square distribution is not symmetric, we calculate the critical value for the left and right tail separately for a two-tailed test.
+
+chi2\_val\_left = np.abs(round(stats.chi2.ppf(q = alpha/2, df = n-1), 4))
+
+chi2\_val\_right = np.abs(round(stats.chi2.ppf(q = (1 - alpha/2), df = n-1), 4))
+
+chi\_test = (np.sum((df\_student\['math\_score'] - samp\_mean)\*\*2)) / variance
+
+p\_val = stats.chi2.sf(x = chi\_test, df = n-1)
+
+If  chi\_test < chi2\_val\_left or chi\_test > chi2\_val\_left then reject Null hypothesis
+
+
+
+
+
+
+
+
+
+
+
 
 
 
