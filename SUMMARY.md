@@ -38,7 +38,7 @@
   * [Word Tokenization & Embedding](natural-language-processing/word-tokenization-and-embedding.md)
   * [Voice (Audio) AI](natural-language-processing/voice-audio-ai.md)
   * [LLM](natural-language-processing/llm/README.md)
-    * [CS336 : Language Model from Scratch](natural-language-processing/llm/cs336-language-model-from-scratch.md)
+    * [Language Model from Scratch](natural-language-processing/llm/language-model-from-scratch.md)
     * [LLM Pre and Post Training](natural-language-processing/llm/llm-pre-and-post-training.md)
     * [Meta-Learning or Few-Shot](natural-language-processing/llm/meta-learning-or-few-shot.md)
 * [Quantization](quantization.md)

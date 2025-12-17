@@ -5,10 +5,6 @@ icon: microphone
 
 # Voice (Audio) AI
 
-
-
-
-
 There are two types of architecture for Voice AI agents :- <br>
 
 1. **Speech to Speech** :- Native Audio handling using model in real time&#x20;
@@ -46,15 +42,9 @@ Advance Processing Layers
 10. TTS → The text-based reply is then converted into speech through a TTS system, which synthesizes the response to sound natural.
 11. Voice Output → Finally, the synthesized speech is played back to the user through the device’s speaker, completing the interaction.&#x20;
 
-
-
 **TTS (Text to Speech)**&#x20;
 
 Speech synthesis is the task of generating speech from some other modality like text, lip movements, etc. In most applications, text is chosen as the preliminary form because of the rapid advance of natural language systems. A Text To Speech (TTS) system aims to convert natural language into speech.
-
-
-
-
 
 **ASR (Automatic Speech Recognition)**&#x20;
 
@@ -63,31 +53,11 @@ Processing Human speech into readable text, popular example are youtube, tiktok 
 * Traditional Hidden Markov models (HHM) and Gaussian Mixture Model (GMM)
 * Large Langaue Model (LLM)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #### S2S Model Architecture&#x20;
 
 The emergence of direct voice-to-voice models represents a significant architectural shift. These systems, including OpenAI’s real-time API and Hume AI’s EVI 2, bypass the traditional STT-LLM-TTS pipeline, offering potentially lower latency and more natural conversational flow.
 
 <figure><img src="../.gitbook/assets/unknown (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-.
-
-
-
-
 
 Resource for code and Datasets :-&#x20;
 

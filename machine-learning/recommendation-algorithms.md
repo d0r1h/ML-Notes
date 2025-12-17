@@ -9,3 +9,12 @@ Following are approaches for Recommender Systems
 * Community-based
 * Hybrid approach :- This RSS is based on the combination of the above-mentioned technique
 
+
+
+
+
+
+
+Reference :&#x20;
+
+[https://www.youtube.com/watch?v=Q7mS1VHm3Yw](https://www.youtube.com/watch?v=Q7mS1VHm3Yw)&#x20;
