@@ -1,26 +1,71 @@
 ---
-description: >-
-  Machine Learning University is an IDEA of free focused-learning of a ML
-  enthusiast for all other ML enthusiasts
+description: Welcome to your team’s developer platform
+coverY: 0
+layout:
+  width: wide
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: false
+  description:
+    visible: false
+  tableOfContents:
+    visible: false
+  outline:
+    visible: false
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+metaLinks:
+  alternates:
+    - https://app.gitbook.com/s/2AwfWOGBWBxQmyvHedqW/
 ---
 
-# Machine Learning University
+# Developer Platform
 
-### **Why This !**&#x20;
+<h2 align="center">Mastering Gen AI</h2>
 
-The Internet is a big place and information is scattered, so if you want to learn something and that's also for free, it is hard to navigate and to keep yourself motivated throughout the journey...\
-So to keep yourself and myself too motivated and focused on the goal I have created this [**`ML-university`**](https://59r.gitbook.io/ml-university/)**.** Mostly free, so that you don't need to hunt for the resource in the Black-hole and waste your precious time.
+<p align="center">From starch (building Sqe2Sqe) to Mastering LLM's</p>
 
-All the resources are taken from the public internet and if you find any copyrighted material and you are the authorized owner of that you can [**Contact me**](mailto:59r@protonmail.com) and the material will be taken down immediately.
+Following is high level structure to follow :-
 
-{% hint style="info" %}
-**This is continuously updated** and if you are a Machine learning practitioner and have some good suggestions to improve this or have some good resources to share, you create a pull request or issue and [contribute](https://github.com/d0r1h/ML-Notes).
-{% endhint %}
+* **Practical** **Seq2Seq** \[Understanding Seq2Seq Models (RNN, LSTM)]
+* **Hands on LLM** : \[Understanding LLM from scratch]
+* **Running Microsoft Phi‑3 using Hugging Face** -> Practical deployment of Microsoft Phi-3 model locally using Hugging Face APIs
+* **Fine‑tune BERT (Sentiment)** -> Hands-on session on fine-tuning BERT to perform sentiment analysis \[From scratch]
+* **Flan‑T5 for Classification** -> Prompt formatting, generative vs discriminative\
+  Using ChatGPT API for Movie Review Classification -> Utilize Open AI's ChatGPT API to build a practical sentiment classification pipeline
+* **Text Clustering using Sentence-Transformers** -> Implementing text clustering techniques on ArXiV research papers
+* **Topic Modeling with BERTopic** -> Hands-on project applying BERTopic to identify themes from ArXiV research papers
+* **LLMs for Text Clustering and Topic Modeling** -> Identification on textual datasets, LLM‑assisted clustering
+* **Prompt Engineering** -> Fundamentals and Tips on crafting effective prompts for maximizing LLM outputs with advanced topics such as context learning, Chain-of-Thought, and Tree-of-Thought.
+* **LLM Guardrails** -> Techniques to set constraints , safety measures
+* **LLM Quantization** -> Understanding model quantization methods for efficient deployments of LLMs
+*   **AI Agents (LangChain)** -> Building complex LLm applications and Agents using LangChain
 
-[Pawan Trivedi](https://pawantrivedi.me) a graduate Machine Learning student at PES University, INDIA maintained this page.&#x20;
+    * Coding Chains -> Hands on demonstration of creating coding chains using LangChain
+    * How to give Memory to LLMs -> Techniques for implementing short-term and long-term memory in LLM applications
+    * LLM Agent using LangChain -> Step-by-step project to build a functioning LLM-powered agents&#x20;
 
-You can also check this website[ ML-University](https://pawantrivedi.me/ML-University/), a hub for technical courses and other useful resources.&#x20;
+    **Semantic Search & RAG**
 
-If you love these resources, give a ⭐on [ML-university](https://github.com/d0r1h/ML-University) & [ML-Notes](https://github.com/d0r1h/ML-Notes) GitHub repo. :love\_letter:
+    * RAG: Intro & Coding -> Basics of semantic search and RAG concepts
+    * LLM Dense Retrieval System -> Build a practical dense retrieval system using LLM embeddings
+    * Chunking Strategies for LLM -> Effective strategies for breaking down text into meaningful chunks for retrieval and processing
+    * Reranking for Semantic Search -> Understand and implement reranking methods\
+      Evaluating Retrieval Systems -> Measure retrieval effectiveness using MAP and nDCG
 
-Checkout [table of content](https://github.com/d0r1h/ML-Notes/blob/main/SUMMARY.md#table-of-contents) for an understanding whatsall in here
+    **Multi Model : Vision Transformers**
+
+    * CLIP -> Explore how CLIP bridges vision and language
+    * BLIP -> Learn how BLIP enhances text generation
+    * Multimodal LLMs: Text to Image
+
+
+
+
+
+<br>
+
