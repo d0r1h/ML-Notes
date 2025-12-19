@@ -1,9 +1,6 @@
 # Ensemble Methods
 
-
-
-
-
-* Bagging (Bootstrap Aggregation) : Random Forest&#x20;
-* Boosting : XgBoost & Adaboost&#x20;
-
+* Voting Classifier -> use different classifiers -> Hard voting -> Final prediction
+* Bagging (Bootstrap Aggregation) : Random Forest
+* Pasting&#x20;
+* Boosting : XgBoost & Adaboost
