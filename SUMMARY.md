@@ -27,6 +27,7 @@
     * [Clustering](machine-learning/ml-notes/clustering.md)
     * [Recommendation System](machine-learning/ml-notes/recommendation-system.md)
     * [Optimization](machine-learning/ml-notes/optimization.md)
+* [Distributed Training](distributed-training.md)
 * [Deep Learning](deep-learning/README.md)
   * [Activation Function](deep-learning/action-function.md)
   * [Regularization](deep-learning/regularization.md)
@@ -58,4 +59,3 @@
 * [DSA (Data Structure & Algorithms)](dsa-data-structure-and-algorithms/README.md)
   * [Problems](dsa-data-structure-and-algorithms/problems.md)
 * [Resources](resources.md)
-
