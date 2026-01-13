@@ -35,4 +35,7 @@ Resources :
 25. [https://arxiv.org/pdf/2208.11970](https://arxiv.org/pdf/2208.11970)
 26. [https://arxiv.org/pdf/2510.21890](https://arxiv.org/pdf/2510.21890)
 27. [https://arxiv.org/html/2303.07909v3#abstract](https://arxiv.org/html/2303.07909v3#abstract)
-28.
+28. [https://www.youtube.com/watch?v=iv-5mZ\_9CPY](https://www.youtube.com/watch?v=iv-5mZ_9CPY) \[But how do AI images and videos actually work]&#x20;
+29. [https://www.youtube.com/watch?v=4VwXBrMoC0E](https://www.youtube.com/watch?v=4VwXBrMoC0E) \[Towards End-to-End Generative Modeling]
+30. [https://www.youtube.com/watch?v=DDq\_pIfHqLs](https://www.youtube.com/watch?v=DDq_pIfHqLs) \[How I Understand Flow Matching]
+31.
