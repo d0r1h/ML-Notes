@@ -121,3 +121,4 @@ Project / Reference / Blogs :-&#x20;
     Ingestion pipeline | Chunking strategy| Embedding model | Vector DB (FAISS / Pinecone / Weaviate) | Retriever (top-k, MMR) | Re-ranking | Prompt construction  | LLM inference  | Evaluation&#x20;
 
     Why chunk size matters | Embedding drift | Hybrid search (BM25 + vector) | Hallucination mitigation
+3. [https://blog.dailydoseofds.com/p/5-chunking-strategies-for-rag](https://blog.dailydoseofds.com/p/5-chunking-strategies-for-rag)&#x20;

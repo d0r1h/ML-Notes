@@ -131,3 +131,6 @@ References :-&#x20;
 7. [LLM Course](https://huggingface.co/learn/llm-course/e)&#x20;
 8. [LLM Transformer Model Visually Explained](https://poloclub.github.io/transformer-explainer/)
 9. [https://dev.to/jps27cse/how-transformers-work-inside-an-llm-step-by-step-1k3g](https://dev.to/jps27cse/how-transformers-work-inside-an-llm-step-by-step-1k3g)
+10. [https://blog.yellowday.day/posts/gpt\_oss\_from\_scratch/](https://blog.yellowday.day/posts/gpt_oss_from_scratch/)&#x20;
+11. [https://debayanmitra1993.medium.com/tokenization-of-language-models-byte-pair-encoding-for-hindi-language-vocabulary-8b6ea63e38cf](https://debayanmitra1993.medium.com/tokenization-of-language-models-byte-pair-encoding-for-hindi-language-vocabulary-8b6ea63e38cf)
+12. [https://debayanmitra1993.medium.com/language-modelling-building-a-prototype-for-english-to-hindi-machine-translator-training-a-3b7b95ea5d7d](https://debayanmitra1993.medium.com/language-modelling-building-a-prototype-for-english-to-hindi-machine-translator-training-a-3b7b95ea5d7d)&#x20;
