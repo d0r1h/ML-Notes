@@ -50,6 +50,7 @@
   * [ETA Prediction for Deliveries/Rides](ml-design/eta-prediction-for-deliveries-rides.md)
 * [Vector Database](vector-database/README.md)
   * [RAG System](vector-database/rag-system.md)
+* [Generative AI (Gen AI)](generative-ai-gen-ai.md)
 * [Reinforcement Learning](reinforcement-learning.md)
 * [Cuda and Kernels](cuda-and-kernels.md)
 * [Machine Learning Interview Guide](machine-learning-interview-guide/README.md)
