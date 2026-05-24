@@ -54,6 +54,7 @@
   * [LLM (Large Language Model)](generative-ai-gen-ai/llm-large-language-model.md)
   * [RAG (Retrieval Augmented Generation)](generative-ai-gen-ai/rag-retrieval-augmented-generation.md)
   * [Agent AI](generative-ai-gen-ai/agent-ai.md)
+  * [LLM - Notes](generative-ai-gen-ai/llm-notes.md)
 * [Reinforcement Learning](reinforcement-learning.md)
 * [Cuda and Kernels](cuda-and-kernels.md)
 * [Machine Learning Interview Guide](machine-learning-interview-guide/README.md)
