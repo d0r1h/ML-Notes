@@ -1,4 +1,60 @@
+---
+description: >-
+  "RAG" can refer to Retrieval-Augmented Generation, a technique that improves
+  AI language models by providing them with external, up-to-date information
+  before they generate a response.
+---
+
 # RAG (Retrieval Augmented Generation)
+
+**Code Link \[**[**https://github.com/d0r1h/Learn-AI/tree/main/Agentic\_AI/RAG**](https://github.com/d0r1h/Learn-AI/tree/main/Agentic_AI/RAG)**]**&#x20;
+
+Why we need RAG, what is the motivation ? Connecting LLMs to external data.
+
+1. Currently all the LLMs are trained on the publicly available data, but what if we need to work with private or internal data (for organization) then what ?&#x20;
+2. We can achieve that by treating LLMs as an operating system and connecting internal data sources through tools.
+
+<img src="../.gitbook/assets/unknown (20).png" alt="" width="375">
+
+**Core of any RAG system at high level is 3 things :**
+
+1. **Indexing** :- Storing data (building database - in context of LLM we use vector databases)
+2. **Retrieval** :- Extracting data / document relevant to user query&#x20;
+3. **Generation** :- LLM generating response based on the question asked and data
+
+<img src="../.gitbook/assets/unknown (21).png" alt="Any RAG system architecture" height="334" width="708">
+
+At high level rag has only three components as we saw above, but within those three components there is a lot that goes to make the system efficient which makes any simple rag system an Advance RAG system and following are the landscape of the same.
+
+<img src="../.gitbook/assets/unknown (22).png" alt="Advance RAG system Landscape" height="680" width="916">
+
+User Query | Query Transformation / Translation | Routing | Query constructions | Indexing | Retrieval Generation | Answer
+
+### Indexing&#x20;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 **RAG System Pipeline**
 
@@ -122,3 +178,4 @@ Project / Reference / Blogs :-&#x20;
 
     Why chunk size matters | Embedding drift | Hybrid search (BM25 + vector) | Hallucination mitigation
 3. [https://blog.dailydoseofds.com/p/5-chunking-strategies-for-rag](https://blog.dailydoseofds.com/p/5-chunking-strategies-for-rag)&#x20;
+4. [https://www.pinecone.io/learn/chunking-strategies/](https://www.pinecone.io/learn/chunking-strategies/)&#x20;
