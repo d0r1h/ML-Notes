@@ -37,6 +37,7 @@
     * [Segmentation](deep-learning/cnn/segmentation.md)
 * [Computer Vision](computer-vision.md)
 * [Natural language processing](natural-language-processing/README.md)
+  * [RNN \[Recurrent Neural Networks\]](natural-language-processing/rnn-recurrent-neural-networks.md)
   * [Word Tokenization & Embedding](natural-language-processing/word-tokenization-and-embedding.md)
   * [Voice (Audio) AI](natural-language-processing/voice-audio-ai.md)
   * [LLM](natural-language-processing/llm/README.md)
