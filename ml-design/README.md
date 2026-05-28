@@ -1,4 +1,8 @@
-# ML Design
+---
+description: Machine Learning and System Design in General
+---
+
+# ML  Design
 
 Video (CaseStudy)
 
@@ -17,3 +21,14 @@ Reading
 * [https://towardsdatascience.com/nailing-the-machine-learning-design-interview-6b91bc1d036c/](https://towardsdatascience.com/nailing-the-machine-learning-design-interview-6b91bc1d036c/)
 * [https://www.reddit.com/r/MachineLearning/comments/syi6wn/d\_any\_tips\_to\_prepare\_for\_a\_ml\_system\_design/](https://www.reddit.com/r/MachineLearning/comments/syi6wn/d_any_tips_to_prepare_for_a_ml_system_design/)
 * [https://manishmazumder5.substack.com/p/real-time-fraud-detection-ml-system](https://manishmazumder5.substack.com/p/real-time-fraud-detection-ml-system)&#x20;
+
+
+
+
+
+* [https://github.com/ashishps1/awesome-low-level-design](https://github.com/ashishps1/awesome-low-level-design)
+* [http://patrickhalina.com/posts/ml-systems-design-interview-guide/#ml-systems-questions](http://patrickhalina.com/posts/ml-systems-design-interview-guide/#ml-systems-questions)
+* [https://codezym.com/roadmap](https://codezym.com/roadmap)
+* [https://systemdesignschool.io/primer](https://systemdesignschool.io/primer)
+* [https://www.hellointerview.com/](https://www.hellointerview.com/)
+*
