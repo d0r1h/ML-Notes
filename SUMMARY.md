@@ -49,6 +49,7 @@
 * [Quantization](quantization.md)
 * [ML  Design](ml-design/README.md)
   * [ETA Prediction for Deliveries/Rides](ml-design/eta-prediction-for-deliveries-rides.md)
+  * [Search Ranking & Recommendation](ml-design/search-ranking-and-recommendation.md)
 * [Vector Database](vector-database.md)
 * [Generative AI (Gen AI)](generative-ai-gen-ai/README.md)
   * [LLM (Large Language Model)](generative-ai-gen-ai/llm-large-language-model.md)
