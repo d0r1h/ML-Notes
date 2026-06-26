@@ -1,6 +1,6 @@
 # Search Ranking & Recommendation
 
-
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>Search Ranking Pipeline</p></figcaption></figure>
 
 
 
