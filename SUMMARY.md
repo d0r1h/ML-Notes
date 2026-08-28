@@ -44,6 +44,7 @@
     * [Language Model from Scratch](natural-language-processing/llm/language-model-from-scratch.md)
     * [LLM Pre and Post Training](natural-language-processing/llm/llm-pre-and-post-training.md)
     * [Meta-Learning or Few-Shot](natural-language-processing/llm/meta-learning-or-few-shot.md)
+    * [LLM Inference](natural-language-processing/llm/llm-inference.md)
 * [Diffusion](diffusion.md)
   * [GAN](diffusion/gan.md)
 * [Quantization](quantization.md)
